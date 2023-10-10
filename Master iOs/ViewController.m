@@ -18,5 +18,7 @@
 	// Do any additional setup after loading the view.
 }
 
-
+- (IBAction)myButtonPress:(id)sender {
+	[MyLabel setText:@"Hello World"];
+}
 @end
