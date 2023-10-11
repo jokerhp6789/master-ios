@@ -22,7 +22,7 @@
                                 <standardMapConfiguration key="preferredConfiguration" elevationStyle="realistic" showsTraffic="YES"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="YsX-FY-k3V">
-                                <rect key="frame" x="96" y="268" width="200" height="21"/>
+                                <rect key="frame" x="96" y="267" width="200" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -30,14 +30,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iqr-nT-MYr">
-                                <rect key="frame" x="159" y="320" width="75" height="35"/>
+                                <rect key="frame" x="114" y="320" width="165" height="35"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button" buttonSize="medium"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Change Text Label" buttonSize="medium"/>
                                 <connections>
                                     <action selector="myButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Qx-gQ-6WW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="at1-Ja-COM">
+                                <rect key="frame" x="125" y="381" width="144" height="35"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Hide Map" buttonSize="medium"/>
+                                <connections>
+                                    <action selector="myButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DNu-H5-f4n"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -45,9 +56,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
-                        <outlet property="MapViewClass" destination="jq3-Oz-ow9" id="ivG-Cz-40C"/>
                         <outlet property="MyButton" destination="Iqr-nT-MYr" id="1Am-5c-Y4h"/>
                         <outlet property="MyLabel" destination="YsX-FY-k3V" id="kUp-Xe-IsT"/>
+                        <outlet property="MyMap" destination="jq3-Oz-ow9" id="hOW-py-C6g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

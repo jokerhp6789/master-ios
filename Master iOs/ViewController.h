@@ -13,8 +13,9 @@
 }
 
 @property (strong, nonatomic) IBOutlet UIButton *MyButton;
-@property (weak, nonatomic) IBOutlet MKMapView *MapViewClass;
+@property (weak, nonatomic) IBOutlet MKMapView *MyMap;
 - (IBAction)myButtonPress:(id)sender;
++ (NSString *)getRandomString:(int) length;
 
 @end
 
