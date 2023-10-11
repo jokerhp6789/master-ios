@@ -42,6 +42,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4440B9A02AD6E82E001B1278 /* CalculationApp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CalculationApp;
+			sourceTree = "<group>";
+		};
 		8458D6FE2AD40B4800CF4935 = {
 			isa = PBXGroup;
 			children = (
@@ -61,13 +68,12 @@
 		8458D7092AD40B4800CF4935 /* Master iOs */ = {
 			isa = PBXGroup;
 			children = (
-				8458D7232AD55C9800CF4935 /* Components */,
+				8458D7232AD55C9800CF4935 /* AutoLayoutPractice */,
+				4440B9A02AD6E82E001B1278 /* CalculationApp */,
 				8458D70A2AD40B4800CF4935 /* AppDelegate.h */,
 				8458D70B2AD40B4800CF4935 /* AppDelegate.m */,
 				8458D70D2AD40B4800CF4935 /* SceneDelegate.h */,
 				8458D70E2AD40B4800CF4935 /* SceneDelegate.m */,
-				8458D7102AD40B4800CF4935 /* ViewController.h */,
-				8458D7112AD40B4800CF4935 /* ViewController.m */,
 				8458D7132AD40B4800CF4935 /* Main.storyboard */,
 				8458D7162AD40B4A00CF4935 /* Assets.xcassets */,
 				8458D7182AD40B4A00CF4935 /* LaunchScreen.storyboard */,
@@ -77,11 +83,13 @@
 			path = "Master iOs";
 			sourceTree = "<group>";
 		};
-		8458D7232AD55C9800CF4935 /* Components */ = {
+		8458D7232AD55C9800CF4935 /* AutoLayoutPractice */ = {
 			isa = PBXGroup;
 			children = (
+				8458D7102AD40B4800CF4935 /* ViewController.h */,
+				8458D7112AD40B4800CF4935 /* ViewController.m */,
 			);
-			path = Components;
+			path = AutoLayoutPractice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
