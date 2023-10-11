@@ -38,10 +38,11 @@ NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ012345
 }
 
 - (void)didReceiveMemoryWarning{
-	
+	NSLog(@"Get Into didReceiveMemoryWarning");
 }
 
 - (IBAction)myButtonPress:(id)sender {
+	[self performSelector:@selector(didReceiveMemoryWarning) withObject:nil afterDelay:1.0];
 	[MyLabel setText: [ViewController getRandomString:10]];
 }
 @end
