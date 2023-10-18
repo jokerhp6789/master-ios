@@ -12,11 +12,14 @@
 #endif /* Header_h */
 #import <UIKit/UIKit.h>
 
-@interface CalculationViewController : UIViewController {
-	
+@interface CalculationApp : UIViewController {
+    float currentNumber;
+    float result;
+    
+    int currentOperation;
 }
 
-@property (strong, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 - (IBAction)onDigitsPress:(id)sender;
 - (IBAction)onCancelPress:(id)sender;

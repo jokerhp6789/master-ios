@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kjh-pk-4CN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kjh-pk-4CN">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -32,7 +33,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Calculation App"/>
                                 <connections>
-                                    <segue destination="FVI-hF-8aW" kind="show" id="YN1-Gp-tZr"/>
+                                    <segue destination="FVI-hF-8aW" kind="show" id="bem-6v-nj7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -48,7 +49,7 @@
         <!--Calculation Screen-->
         <scene sceneID="INf-Bc-X2g">
             <objects>
-                <viewController title="Calculation Screen" modalPresentationStyle="fullScreen" id="FVI-hF-8aW" customClass="CalculationViewController" sceneMemberID="viewController">
+                <viewController title="Calculation Screen" modalPresentationStyle="fullScreen" id="FVI-hF-8aW" customClass="CalculationApp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lkF-oC-4Qk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,7 +80,7 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="ClH-FK-1MM"/>
+                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="F7j-Jd-zZT"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whd-A5-MVw">
@@ -94,7 +95,7 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="Xb6-dw-EdU"/>
+                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="HRh-JU-6MW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6O-cN-Cb7">
@@ -109,7 +110,7 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="x3G-zP-iol"/>
+                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="M5P-HE-NkZ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yev-EZ-6zJ">
@@ -124,7 +125,7 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="onOperationPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="9ls-zr-UaC"/>
+                                                    <action selector="onOperationPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="YoN-8r-ie3"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -149,7 +150,7 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="ZbT-HT-elN"/>
+                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="plE-7M-o7N"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgr-Jn-8yY">
@@ -164,7 +165,7 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="0GF-So-nho"/>
+                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="1pc-G8-NQc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jm-4r-1PE">
@@ -179,7 +180,7 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="hYt-xd-CB9"/>
+                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="oLt-wg-vOP"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPH-e3-O08">
@@ -194,7 +195,7 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="onOperationPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="UMN-gZ-HSu"/>
+                                                    <action selector="onOperationPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="5iE-AR-G4n"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -219,7 +220,7 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="H7e-dp-sqh"/>
+                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="vzP-ZX-ypm"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oup-Tp-Cgx">
@@ -234,7 +235,7 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="ThJ-Yf-QyT"/>
+                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="XDQ-g4-MvV"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9e-m7-q8T">
@@ -249,7 +250,7 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="2vZ-YB-c9a"/>
+                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="YNW-tM-hVs"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNl-nV-dIm">
@@ -264,7 +265,7 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="onOperationPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="npy-Fg-Eo1"/>
+                                                    <action selector="onOperationPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="LKl-fw-lVG"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -288,7 +289,7 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="5st-yK-rUY"/>
+                                                    <action selector="onDigitsPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="KSj-Qt-CLB"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V9-qn-zUr">
@@ -303,7 +304,7 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="onCancelPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="bMI-Rg-Nqe"/>
+                                                    <action selector="onCancelPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="Jw4-bm-dfV"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36W-Cb-9VP">
@@ -318,7 +319,7 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="onOperationPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="VFi-Nd-TAq"/>
+                                                    <action selector="onOperationPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="nar-VB-jLs"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZF-2h-nxO">
@@ -333,7 +334,7 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="onOperationPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="pMo-bt-Fhk"/>
+                                                    <action selector="onOperationPress:" destination="FVI-hF-8aW" eventType="touchUpInside" id="JC3-kP-yMi"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -359,7 +360,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="D6t-VN-t7K"/>
                     <connections>
-                        <outlet property="label" destination="wRW-Wz-mbL" id="hTE-Qk-xPz"/>
+                        <outlet property="label" destination="wRW-Wz-mbL" id="4fO-X3-HOS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLE-aj-YGL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
