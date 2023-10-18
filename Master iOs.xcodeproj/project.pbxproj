@@ -29,6 +29,7 @@
 		8458D7192AD40B4A00CF4935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8458D71B2AD40B4A00CF4935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8458D71C2AD40B4A00CF4935 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		847082142ADFF03100DE6A0E /* CalculationApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculationApp.h; path = "Master iOs/CalculationApp.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +46,7 @@
 		4440B9A02AD6E82E001B1278 /* CalculationApp */ = {
 			isa = PBXGroup;
 			children = (
+				847082142ADFF03100DE6A0E /* CalculationApp.h */,
 			);
 			path = CalculationApp;
 			sourceTree = "<group>";
