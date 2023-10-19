@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44061BF12AE014B60047B699 /* CalculationApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 44061BF02AE014B60047B699 /* CalculationApp.m */; };
+		44061BF12AE014B60047B699 /* CalculationApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 44061BF02AE014B60047B699 /* CalculationApp.mm */; };
 		8458D70C2AD40B4800CF4935 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8458D70B2AD40B4800CF4935 /* AppDelegate.m */; };
 		8458D70F2AD40B4800CF4935 /* SceneDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8458D70E2AD40B4800CF4935 /* SceneDelegate.mm */; };
 		8458D7122AD40B4800CF4935 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8458D7112AD40B4800CF4935 /* ViewController.m */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		44061BF02AE014B60047B699 /* CalculationApp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculationApp.m; sourceTree = "<group>"; };
+		44061BF02AE014B60047B699 /* CalculationApp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CalculationApp.mm; sourceTree = "<group>"; };
 		8458D7072AD40B4800CF4935 /* Master iOs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Master iOs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8458D70A2AD40B4800CF4935 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8458D70B2AD40B4800CF4935 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				847082142ADFF03100DE6A0E /* CalculationApp.h */,
-				44061BF02AE014B60047B699 /* CalculationApp.m */,
+				44061BF02AE014B60047B699 /* CalculationApp.mm */,
 			);
 			path = CalculationApp;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 				8458D70C2AD40B4800CF4935 /* AppDelegate.m in Sources */,
 				8458D71D2AD40B4A00CF4935 /* main.m in Sources */,
 				8458D70F2AD40B4800CF4935 /* SceneDelegate.mm in Sources */,
-				44061BF12AE014B60047B699 /* CalculationApp.m in Sources */,
+				44061BF12AE014B60047B699 /* CalculationApp.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

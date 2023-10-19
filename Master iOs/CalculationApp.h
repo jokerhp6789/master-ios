@@ -24,6 +24,7 @@
 - (IBAction)onDigitsPress:(id)sender;
 - (IBAction)onCancelPress:(id)sender;
 - (IBAction)onOperationPress:(id)sender;
-
+- (IBAction)onEqualPress:(id)sender;
+//+ (float)getResultFromOperation:(int)operation withResult:(float)withResult andCurrentNumer:(float)andCurrentNumer;
 
 @end
