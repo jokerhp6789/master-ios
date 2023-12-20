@@ -45,6 +45,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		443C3B192B333A6800CFA403 /* PointsOfInterest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PointsOfInterest;
+			sourceTree = "<group>";
+		};
 		4440B9A02AD6E82E001B1278 /* CalculationApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +80,7 @@
 		8458D7092AD40B4800CF4935 /* Master iOs */ = {
 			isa = PBXGroup;
 			children = (
+				443C3B192B333A6800CFA403 /* PointsOfInterest */,
 				8458D7232AD55C9800CF4935 /* AutoLayoutPractice */,
 				4440B9A02AD6E82E001B1278 /* CalculationApp */,
 				8458D70A2AD40B4800CF4935 /* AppDelegate.h */,
