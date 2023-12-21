@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		44061BF12AE014B60047B699 /* CalculationApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 44061BF02AE014B60047B699 /* CalculationApp.mm */; };
+		84114BD02B33E1AD005DC592 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84114BCF2B33E1AD005DC592 /* MapController.m */; };
+		8454BBDA2B33E91A0037E6DA /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454BBD92B33E91A0037E6DA /* Location.m */; };
+		8454BBDE2B33EC940037E6DA /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454BBDD2B33EC940037E6DA /* LocationController.m */; };
+		8454BBE12B33F66B0037E6DA /* Location.json in Resources */ = {isa = PBXBuildFile; fileRef = 8454BBE02B33F66B0037E6DA /* Location.json */; };
 		8458D70C2AD40B4800CF4935 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8458D70B2AD40B4800CF4935 /* AppDelegate.m */; };
 		8458D70F2AD40B4800CF4935 /* SceneDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8458D70E2AD40B4800CF4935 /* SceneDelegate.mm */; };
 		8458D7122AD40B4800CF4935 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8458D7112AD40B4800CF4935 /* ViewController.m */; };
@@ -19,6 +23,13 @@
 
 /* Begin PBXFileReference section */
 		44061BF02AE014B60047B699 /* CalculationApp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CalculationApp.mm; sourceTree = "<group>"; };
+		84114BCE2B33E1AD005DC592 /* MapController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
+		84114BCF2B33E1AD005DC592 /* MapController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
+		8454BBD92B33E91A0037E6DA /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		8454BBDB2B33E92A0037E6DA /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		8454BBDC2B33EC140037E6DA /* LocationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
+		8454BBDD2B33EC940037E6DA /* LocationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
+		8454BBE02B33F66B0037E6DA /* Location.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Location.json; sourceTree = "<group>"; };
 		8458D7072AD40B4800CF4935 /* Master iOs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Master iOs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8458D70A2AD40B4800CF4935 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8458D70B2AD40B4800CF4935 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,13 +56,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		443C3B192B333A6800CFA403 /* PointsOfInterest */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PointsOfInterest;
-			sourceTree = "<group>";
-		};
 		4440B9A02AD6E82E001B1278 /* CalculationApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +63,28 @@
 				44061BF02AE014B60047B699 /* CalculationApp.mm */,
 			);
 			path = CalculationApp;
+			sourceTree = "<group>";
+		};
+		84114BCD2B33E18A005DC592 /* MapController */ = {
+			isa = PBXGroup;
+			children = (
+				8454BBD52B33E8C90037E6DA /* Location */,
+				84114BCE2B33E1AD005DC592 /* MapController.h */,
+				84114BCF2B33E1AD005DC592 /* MapController.m */,
+			);
+			path = MapController;
+			sourceTree = "<group>";
+		};
+		8454BBD52B33E8C90037E6DA /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				8454BBD92B33E91A0037E6DA /* Location.m */,
+				8454BBE02B33F66B0037E6DA /* Location.json */,
+				8454BBDB2B33E92A0037E6DA /* Location.h */,
+				8454BBDC2B33EC140037E6DA /* LocationController.h */,
+				8454BBDD2B33EC940037E6DA /* LocationController.m */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 		8458D6FE2AD40B4800CF4935 = {
@@ -80,7 +106,7 @@
 		8458D7092AD40B4800CF4935 /* Master iOs */ = {
 			isa = PBXGroup;
 			children = (
-				443C3B192B333A6800CFA403 /* PointsOfInterest */,
+				84114BCD2B33E18A005DC592 /* MapController */,
 				8458D7232AD55C9800CF4935 /* AutoLayoutPractice */,
 				4440B9A02AD6E82E001B1278 /* CalculationApp */,
 				8458D70A2AD40B4800CF4935 /* AppDelegate.h */,
@@ -89,6 +115,7 @@
 				8458D70E2AD40B4800CF4935 /* SceneDelegate.mm */,
 				8458D7132AD40B4800CF4935 /* Main.storyboard */,
 				8458D7162AD40B4A00CF4935 /* Assets.xcassets */,
+				84EBA3F92B343ED00023E565 /* CafeShops */,
 				8458D7182AD40B4A00CF4935 /* LaunchScreen.storyboard */,
 				8458D71B2AD40B4A00CF4935 /* Info.plist */,
 				8458D71C2AD40B4A00CF4935 /* main.m */,
@@ -103,6 +130,13 @@
 				8458D7112AD40B4800CF4935 /* ViewController.m */,
 			);
 			path = AutoLayoutPractice;
+			sourceTree = "<group>";
+		};
+		84EBA3F92B343ED00023E565 /* CafeShops */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CafeShops;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +198,7 @@
 			files = (
 				8458D71A2AD40B4A00CF4935 /* LaunchScreen.storyboard in Resources */,
 				8458D7172AD40B4A00CF4935 /* Assets.xcassets in Resources */,
+				8454BBE12B33F66B0037E6DA /* Location.json in Resources */,
 				8458D7152AD40B4800CF4935 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,6 +214,9 @@
 				8458D70C2AD40B4800CF4935 /* AppDelegate.m in Sources */,
 				8458D71D2AD40B4A00CF4935 /* main.m in Sources */,
 				8458D70F2AD40B4800CF4935 /* SceneDelegate.mm in Sources */,
+				8454BBDE2B33EC940037E6DA /* LocationController.m in Sources */,
+				8454BBDA2B33E91A0037E6DA /* Location.m in Sources */,
+				84114BD02B33E1AD005DC592 /* MapController.m in Sources */,
 				44061BF12AE014B60047B699 /* CalculationApp.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
