@@ -68,10 +68,6 @@ inline float getResultFromOperation(int operation, float withResult,float andCur
 - (IBAction)onEqualPress:(id)sender {
 	if(currentOperation != 0){
 		result = getResultFromOperation(currentOperation,result,  currentNumber,true);
-	} else  {
-		if(result == 0){
-			result = currentNumber;
-		}
 	}
 	currentNumber = 0;
 	currentOperation = 0;
