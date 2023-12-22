@@ -116,6 +116,7 @@
 	UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 250, 50)];
 	UIButton *button = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
 	button.translatesAutoresizingMaskIntoConstraints = false;
+	button.accessibilityIdentifier = point.address;
 	
 	[button addTarget:self action:@selector(onInformationPress:) forControlEvents:UIControlEventTouchUpInside];
 	
@@ -163,8 +164,8 @@
 	return  view;
 }
 
--(IBAction)onInformationPress:(id)sender {
-	NSLog(@"GO INTO INFORMATION");
+-(IBAction)onInformationPress:(UIButton*)sender {
+	NSLog(@"GO INTO INFORMATION",sender.accessibilityLabel);
 	LocationView *locationView = [[LocationView alloc]init ];
 	[self.navigationController pushViewController:locationView animated:YES];
 }

@@ -573,21 +573,6 @@
             </objects>
             <point key="canvasLocation" x="1447" y="1423"/>
         </scene>
-        <!--Location View-->
-        <scene sceneID="lPp-ad-oox">
-            <objects>
-                <viewController id="aAb-59-5LC" customClass="LocationView" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Nko-Uk-dwM">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="LgI-PA-PJ1"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ut4-zM-Pvw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2476" y="1049"/>
-        </scene>
     </scenes>
     <resources>
         <image name="fb" width="329.33334350585938" height="53.333332061767578"/>
