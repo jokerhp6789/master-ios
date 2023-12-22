@@ -19,5 +19,20 @@
 	[self.view addSubview:mapView];
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    Location *point =_activePoint;
+    if(point != nil){
+        CLLocationCoordinate2D coordinate;
+        coordinate.latitude = point.latitude;
+        coordinate.longitude = point.longtitude;
+        
+        MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coordinate, 750, 750);
+        
+        [self.mapView setRegion:region animated:YES];
+        
+    }
+    
+}
+
 
 @end

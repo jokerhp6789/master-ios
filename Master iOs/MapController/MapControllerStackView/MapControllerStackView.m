@@ -116,7 +116,7 @@
 	UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 250, 50)];
 	UIButton *button = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
 	button.translatesAutoresizingMaskIntoConstraints = false;
-	button.accessibilityIdentifier = point.address;
+	button.accessibilityLabel = [point.id stringValue];
 	
 	[button addTarget:self action:@selector(onInformationPress:) forControlEvents:UIControlEventTouchUpInside];
 	
@@ -165,9 +165,20 @@
 }
 
 -(IBAction)onInformationPress:(UIButton*)sender {
-	NSLog(@"GO INTO INFORMATION",sender.accessibilityLabel);
-	LocationView *locationView = [[LocationView alloc]init ];
-	[self.navigationController pushViewController:locationView animated:YES];
+	NSLog(@"Button value: %@",sender.accessibilityLabel);
+    NSArray *filter = [_points filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"id == %f",[sender.accessibilityLabel floatValue]]];
+    
+    if(filter.count > 0){
+        Location *found = filter.firstObject;
+        if(found != nil){
+            LocationView *locationView = [[LocationView alloc]init ];
+            locationView.activePoint = found;
+            [self.navigationController pushViewController:locationView animated:YES];
+        }
+    }
+    
+    
+	
 }
 
 

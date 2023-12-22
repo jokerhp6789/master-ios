@@ -13,5 +13,4 @@
 
 - (NSArray*) getPointsOfInterest;
 
-
 @end

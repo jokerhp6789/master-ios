@@ -21,7 +21,9 @@
 @property (strong,nonatomic) NSString *photo;
 
 @property (nonatomic) float latitude;
-					
+                    
 @property (nonatomic) float longtitude;
+
+@property (nonatomic) NSNumber *id;
 
 @end

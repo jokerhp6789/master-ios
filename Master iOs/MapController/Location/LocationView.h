@@ -12,9 +12,12 @@
 #endif /* LocationView_h */
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "Location.h"
 
 @interface LocationView : UIViewController
 
 @property (strong,nonatomic) MKMapView *mapView;
+
+@property (strong,nonatomic) Location *activePoint;
 
 @end
