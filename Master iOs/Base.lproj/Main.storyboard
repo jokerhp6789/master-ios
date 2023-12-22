@@ -35,37 +35,20 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5a-qv-DY2">
-                                <rect key="frame" x="95.666666666666686" y="259.66666666666669" width="200" height="48.666666666666686"/>
+                                <rect key="frame" x="95.666666666666686" y="259.66666666666669" width="200" height="51"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Map Controller" titleAlignment="center">
-                                    <attributedString key="attributedSubtitle">
-                                        <fragment content="Table View">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="toolTip"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="filled" title="Map Controller" subtitle="( Table View )" titleAlignment="center"/>
                                 <connections>
                                     <segue destination="gmE-sN-AjO" kind="show" id="1jC-1d-JHC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXh-y2-O1b">
-                                <rect key="frame" x="96.666666666666686" y="342.33333333333331" width="200" height="48.666666666666686"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4x-Wa-gQq">
+                                <rect key="frame" x="96" y="343" width="200" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Map Controller" titleAlignment="center">
-                                    <attributedString key="attributedSubtitle">
-                                        <fragment content="Stack View">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="toolTip"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="filled" title="Map Controller" subtitle="( Stack View )" titleAlignment="center"/>
                                 <connections>
-                                    <segue destination="gsU-ps-0G3" kind="show" id="7xU-6w-jvf"/>
+                                    <segue destination="Wuh-Ym-Mcb" kind="show" id="ysX-xO-c9Q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -76,9 +59,6 @@
                             <constraint firstItem="hwP-Ev-PJJ" firstAttribute="trailing" secondItem="F5a-qv-DY2" secondAttribute="trailing" constant="97.5" id="9jY-bo-Wjv"/>
                             <constraint firstItem="D3t-mw-pPE" firstAttribute="leading" secondItem="hwP-Ev-PJJ" secondAttribute="leading" constant="95.5" id="B60-2y-UR9"/>
                             <constraint firstItem="hwP-Ev-PJJ" firstAttribute="trailing" secondItem="IcT-Jc-eSd" secondAttribute="trailing" constant="96.5" id="BYj-Bg-hnv"/>
-                            <constraint firstItem="WXh-y2-O1b" firstAttribute="top" secondItem="F5a-qv-DY2" secondAttribute="bottom" constant="34" id="JN7-nQ-iDs"/>
-                            <constraint firstItem="WXh-y2-O1b" firstAttribute="leading" secondItem="hwP-Ev-PJJ" secondAttribute="leading" constant="96.5" id="Wvz-0K-zNb"/>
-                            <constraint firstItem="hwP-Ev-PJJ" firstAttribute="trailing" secondItem="WXh-y2-O1b" secondAttribute="trailing" constant="96.5" id="d62-l7-dYB"/>
                             <constraint firstItem="F5a-qv-DY2" firstAttribute="top" secondItem="IcT-Jc-eSd" secondAttribute="bottom" constant="34" id="h8K-ux-ZCz"/>
                             <constraint firstItem="hwP-Ev-PJJ" firstAttribute="trailing" secondItem="D3t-mw-pPE" secondAttribute="trailing" constant="97.5" id="kXf-4o-0Fb"/>
                             <constraint firstItem="IcT-Jc-eSd" firstAttribute="leading" secondItem="hwP-Ev-PJJ" secondAttribute="leading" constant="96.5" id="mSc-5l-UEl"/>
@@ -579,20 +559,20 @@
             <point key="canvasLocation" x="1477" y="606"/>
         </scene>
         <!--Map Controller Stack View-->
-        <scene sceneID="W5e-yF-6qj">
+        <scene sceneID="Se0-jY-rIT">
             <objects>
-                <viewController id="gsU-ps-0G3" customClass="MapControllerStackView" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="efO-GD-ouk">
+                <viewController id="Wuh-Ym-Mcb" customClass="MapControllerStackView" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zc5-ki-k67">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="JPb-Tf-0XS"/>
+                        <viewLayoutGuide key="safeArea" id="uGw-Tm-Fkd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="QHi-lK-pZe"/>
+                    <navigationItem key="navigationItem" id="yj6-cK-OX5"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gcT-um-FMq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jvr-u6-bRV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1496" y="1329"/>
+            <point key="canvasLocation" x="1447" y="1423"/>
         </scene>
     </scenes>
     <resources>
