@@ -17,6 +17,42 @@
             "photo": "coffee-3",
             "latitude": 13.744713945021694,
             "longtitude": 100.58085627359073
-        }
+        },
+	{
+		"address": "57, Bang Khun Non, Bangkok Noi, Bangkok 10700",
+		"photo": "coffee-2",
+		"latitude": 13.77439279396116,
+		"longtitude": 100.46378322136643
+	},
+	{
+		"address": "9, 2 Soi Phrom Phak, Khlong Tan Nuea, Watthana, Bangkok 10110",
+		"photo": "coffee-3",
+		"latitude": 13.744713945021694,
+		"longtitude": 100.58085627359073
+	},
+	{
+		"address": "57, Bang Khun Non, Bangkok Noi, Bangkok 10700",
+		"photo": "coffee-2",
+		"latitude": 13.77439279396116,
+		"longtitude": 100.46378322136643
+	},
+	{
+		"address": "9, 2 Soi Phrom Phak, Khlong Tan Nuea, Watthana, Bangkok 10110",
+		"photo": "coffee-3",
+		"latitude": 13.744713945021694,
+		"longtitude": 100.58085627359073
+	},
+	{
+		"address": "57, Bang Khun Non, Bangkok Noi, Bangkok 10700",
+		"photo": "coffee-2",
+		"latitude": 13.77439279396116,
+		"longtitude": 100.46378322136643
+	},
+	{
+		"address": "9, 2 Soi Phrom Phak, Khlong Tan Nuea, Watthana, Bangkok 10110",
+		"photo": "coffee-3",
+		"latitude": 13.744713945021694,
+		"longtitude": 100.58085627359073
+	}
     ]
 }

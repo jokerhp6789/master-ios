@@ -34,11 +34,20 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5a-qv-DY2">
-                                <rect key="frame" x="95.666666666666686" y="259.66666666666669" width="200" height="34.333333333333314"/>
+                                <rect key="frame" x="95.666666666666686" y="259.66666666666669" width="200" height="51"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Map Controller"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Map Controller" subtitle="( Table View )" titleAlignment="center"/>
                                 <connections>
                                     <segue destination="gmE-sN-AjO" kind="show" id="1jC-1d-JHC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4x-Wa-gQq">
+                                <rect key="frame" x="96" y="343" width="200" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Map Controller" subtitle="( Stack View )" titleAlignment="center"/>
+                                <connections>
+                                    <segue destination="Wuh-Ym-Mcb" kind="show" id="ysX-xO-c9Q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -383,22 +392,6 @@
             </objects>
             <point key="canvasLocation" x="1446.5648854961833" y="-119.01408450704226"/>
         </scene>
-        <!--Map Controller-->
-        <scene sceneID="L5h-6H-Vy3">
-            <objects>
-                <viewController id="drS-JP-SOB" customClass="MapController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xwl-bI-OT7">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="AZt-Ls-oMr"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Map Controller" id="eux-9N-w3g"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="joi-xn-vLr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3424" y="560"/>
-        </scene>
         <!--AutoLayoutScreen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -563,6 +556,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vc7-3o-IIB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1477" y="606"/>
+        </scene>
+        <!--Map Controller Stack View-->
+        <scene sceneID="Se0-jY-rIT">
+            <objects>
+                <viewController id="Wuh-Ym-Mcb" customClass="MapControllerStackView" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zc5-ki-k67">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uGw-Tm-Fkd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yj6-cK-OX5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jvr-u6-bRV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1447" y="1423"/>
+        </scene>
+        <!--Location View-->
+        <scene sceneID="lPp-ad-oox">
+            <objects>
+                <viewController id="aAb-59-5LC" customClass="LocationView" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nko-Uk-dwM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="LgI-PA-PJ1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ut4-zM-Pvw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2476" y="1049"/>
         </scene>
     </scenes>
     <resources>
