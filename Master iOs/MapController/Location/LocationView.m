@@ -16,7 +16,8 @@
 - (void)viewDidLoad{
 	[super viewDidLoad];
 	MKMapView *mapView = [[MKMapView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height) ];
-	[self.view addSubview:mapView];
+    self.mapView = mapView;
+	[self.view addSubview:self.mapView];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -25,6 +26,10 @@
         CLLocationCoordinate2D coordinate;
         coordinate.latitude = point.latitude;
         coordinate.longitude = point.longtitude;
+        
+        CLLocationCoordinate2D centerCoordinate;
+        centerCoordinate.latitude = 37.781453;
+        centerCoordinate.longitude = -122.417158;
         
         MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coordinate, 750, 750);
         

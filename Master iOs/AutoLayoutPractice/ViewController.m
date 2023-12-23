@@ -30,10 +30,18 @@ NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ012345
 	_MyButton.layer.cornerRadius = 8;
 	_MyButton.backgroundColor = UIColor.blackColor;
 	_MyButton.tintColor = UIColor.whiteColor;
+    _MyButton.backgroundColor = UIColor.blackColor;
+    _MyButton.tintColor = UIColor.whiteColor;
 	
 	_MyMap.layer.cornerRadius = 8;
-	_MyButton.backgroundColor = UIColor.blackColor;
-	_MyButton.tintColor = UIColor.whiteColor;
+    
+    
+    CLLocationCoordinate2D centerCoordinate;
+    centerCoordinate.latitude = 37.781453;
+    centerCoordinate.longitude = -122.417158;
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(centerCoordinate, 750, 750);
+    [_MyMap setRegion:viewRegion animated:YES];
+	
 	// Do any additional setup after loading the view.
 }
 
