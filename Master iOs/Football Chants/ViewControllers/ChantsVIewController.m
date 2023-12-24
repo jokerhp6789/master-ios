@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import "ChantsVIewController.h"
+#import "Team.h"
+#import "TeamTableViewCell.h"
 
 @implementation ChantsVIewController
 
@@ -30,11 +32,12 @@
     tableView.estimatedRowHeight = 44;
     tableView.backgroundColor = [UIColor grayColor];
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    [tableView registerClass:[TeamTableViewCell class] forCellReuseIdentifier:cellId];
     tableView.dataSource = self; // assign all the method required by the UITableDataSource protocol which are implemented in the UITableView protocol MARK  to the tableView obj
     
     self.tableView = tableView;
     [self.view addSubview:self.tableView];
-
+    
     [NSLayoutConstraint activateConstraints:@[
         [_tableView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor],
         [_tableView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor],
@@ -46,26 +49,28 @@
 // MARK: - UITableView protocol
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    switch (indexPath.row) {
-        case 0:
-            cell.backgroundColor = [UIColor redColor];
-            break;
-             case 1:
-            cell.backgroundColor = [UIColor orangeColor];
-            break;
-            
-             case 2:
-            cell.backgroundColor = [UIColor yellowColor];
-            break;
-            
-        default:
-            break;
-    }
+    TeamTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+//    Team *team = [[Team alloc] init];
+//    UIColor *teamColor = [team getTeamColor:chelsea];
+//    switch (indexPath.row) {
+//        case 0:
+//            cell.backgroundColor = [UIColor redColor];
+//            break;
+//        case 1:
+//            cell.backgroundColor = [UIColor orangeColor];
+//            break;
+//        case 2:
+//            cell.backgroundColor = teamColor;
+//            break;
+//        default:
+//            break;
+//    }
+    
+    [cell configure];
     return  cell;
 }
 

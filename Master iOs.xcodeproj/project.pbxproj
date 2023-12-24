@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		44061BF12AE014B60047B699 /* CalculationApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 44061BF02AE014B60047B699 /* CalculationApp.mm */; };
 		444737762B36F6FB00619391 /* ChantsVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444737752B36F6FB00619391 /* ChantsVIewController.m */; };
+		4447377A2B3720A100619391 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 444737792B3720A100619391 /* Team.m */; };
+		4472B99B2B38136400A59ACF /* TeamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4472B99A2B38136400A59ACF /* TeamTableViewCell.m */; };
+		4472B9A02B3826D300A59ACF /* TeamViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4472B99F2B3826D300A59ACF /* TeamViewModel.m */; };
 		84114BD02B33E1AD005DC592 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84114BCF2B33E1AD005DC592 /* MapController.m */; };
 		8454BBDA2B33E91A0037E6DA /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454BBD92B33E91A0037E6DA /* Location.m */; };
 		8454BBDE2B33EC940037E6DA /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454BBDD2B33EC940037E6DA /* LocationController.m */; };
@@ -28,6 +31,12 @@
 		44061BF02AE014B60047B699 /* CalculationApp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CalculationApp.mm; sourceTree = "<group>"; };
 		444737752B36F6FB00619391 /* ChantsVIewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChantsVIewController.m; sourceTree = "<group>"; };
 		444737772B36F71F00619391 /* ChantsVIewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChantsVIewController.h; sourceTree = "<group>"; };
+		444737792B3720A100619391 /* Team.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
+		4447377B2B3720C500619391 /* Team.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
+		4472B99A2B38136400A59ACF /* TeamTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamTableViewCell.m; sourceTree = "<group>"; };
+		4472B99C2B38137900A59ACF /* TeamTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamTableViewCell.h; sourceTree = "<group>"; };
+		4472B99E2B3826C200A59ACF /* TeamViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamViewModel.h; sourceTree = "<group>"; };
+		4472B99F2B3826D300A59ACF /* TeamViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamViewModel.m; sourceTree = "<group>"; };
 		84114BCE2B33E1AD005DC592 /* MapController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
 		84114BCF2B33E1AD005DC592 /* MapController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
 		8454BBD92B33E91A0037E6DA /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
@@ -77,6 +86,9 @@
 		444737712B36E85300619391 /* Football Chants */ = {
 			isa = PBXGroup;
 			children = (
+				4472B99D2B3820E000A59ACF /* ViewModels */,
+				4472B9992B38133400A59ACF /* Views */,
+				444737782B371F6200619391 /* Models */,
 				444737742B36F5FB00619391 /* ViewControllers */,
 			);
 			path = "Football Chants";
@@ -89,6 +101,33 @@
 				444737772B36F71F00619391 /* ChantsVIewController.h */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		444737782B371F6200619391 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				444737792B3720A100619391 /* Team.m */,
+				4447377B2B3720C500619391 /* Team.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4472B9992B38133400A59ACF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4472B99A2B38136400A59ACF /* TeamTableViewCell.m */,
+				4472B99C2B38137900A59ACF /* TeamTableViewCell.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4472B99D2B3820E000A59ACF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4472B99E2B3826C200A59ACF /* TeamViewModel.h */,
+				4472B99F2B3826D300A59ACF /* TeamViewModel.m */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		84114BCD2B33E18A005DC592 /* MapController */ = {
@@ -244,7 +283,9 @@
 				84EBA3FD2B352BFD0023E565 /* MapControllerStackView.m in Sources */,
 				8458D7122AD40B4800CF4935 /* ViewController.m in Sources */,
 				8458D70C2AD40B4800CF4935 /* AppDelegate.m in Sources */,
+				4472B9A02B3826D300A59ACF /* TeamViewModel.m in Sources */,
 				8458D71D2AD40B4A00CF4935 /* main.m in Sources */,
+				4447377A2B3720A100619391 /* Team.m in Sources */,
 				8458D70F2AD40B4800CF4935 /* SceneDelegate.mm in Sources */,
 				8454BBDE2B33EC940037E6DA /* LocationController.m in Sources */,
 				8454BBDA2B33E91A0037E6DA /* Location.m in Sources */,
@@ -252,6 +293,7 @@
 				444737762B36F6FB00619391 /* ChantsVIewController.m in Sources */,
 				84114BD02B33E1AD005DC592 /* MapController.m in Sources */,
 				44061BF12AE014B60047B699 /* CalculationApp.mm in Sources */,
+				4472B99B2B38136400A59ACF /* TeamTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
