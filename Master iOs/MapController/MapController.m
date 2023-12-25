@@ -8,6 +8,7 @@
 #import "MapController.h"
 #import "LocationController.h"
 #import "Location.h"
+#import "MapItemViewCell.h"
 
 @implementation MapController
 
@@ -18,18 +19,18 @@
 	LocationController *model =[[LocationController alloc] init];
 	self.points = [model getPointsOfInterest];
 	
-	self.tableView.backgroundColor = [UIColor whiteColor];
+    UITableView *tableView = [[UITableView alloc]init ];
+    
+    tableView.translatesAutoresizingMaskIntoConstraints = false;
+    tableView.estimatedRowHeight = 100;
+    tableView.rowHeight = UITableViewAutomaticDimension;
+    tableView.dataSource = self;
+    
+    [tableView registerClass:[MapItemViewCell class] forCellReuseIdentifier:MapItemView_CellId];
+    
+    self.tableView = tableView;
+    
 
-//
-//	// init scrollview
-//	self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
-//	self.scrollView.backgroundColor = [UIColor whiteColor];
-//
-//	// init tableView
-//	self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
-//	self.tableView.backgroundColor = [UIColor whiteColor];
-	
-//	[self.view addSubview:self.tableView];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -44,21 +45,27 @@
 // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-	if(cell == nil){
-		cell =[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-	}
-	Location *point = [_points objectAtIndex:indexPath.row];
-	
-	cell.textLabel.text = [point valueForKey:@"address"];
-	[
-		cell.imageView setImage:[UIImage imageNamed:[point valueForKey:@"photo"]]
-	];
-	UIButton *button = [ [UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
-	button.titleLabel.text = @"Go to map";
-	button.backgroundColor = [UIColor systemBlueColor];
-	button.tintColor = [UIColor whiteColor];
-//	[cell.contentView addSubview:button];
+	MapItemViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MapItemView_CellId
+                             forIndexPath:indexPath
+    ];
+    
+    Location *point = [_points objectAtIndex:indexPath.row];
+    
+//	if(cell == nil){
+//		cell =[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+//	}
+//
+//	cell.textLabel.text = [point valueForKey:@"address"];
+//	[
+//		cell.imageView setImage:[UIImage imageNamed:[point valueForKey:@"photo"]]
+//	];
+//	UIButton *button = [ [UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
+//	button.titleLabel.text = @"Go to map";
+//	button.backgroundColor = [UIColor systemBlueColor];
+//	button.tintColor = [UIColor whiteColor];
+    
+    [cell configure:point];
+
 	return cell;
 }
 

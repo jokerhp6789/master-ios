@@ -12,9 +12,9 @@
 #endif /* MapControllerStackView_h */
 
 #import <UIKit/UIKit.h>
+#import "MapItemView.h"
 
-@interface MapControllerStackView : UIViewController
-
+@interface MapControllerStackView : UIViewController<MapItemViewDelegate>
 
 @property (strong,nonatomic) UIScrollView *scrollView;
 

@@ -11,6 +11,8 @@
 		4415415D2B391B9000FEE953 /* TeamsViewModelSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4415415C2B391B9000FEE953 /* TeamsViewModelSwift.swift */; };
 		4415415F2B391ED500FEE953 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4415415E2B391ED500FEE953 /* Team.swift */; };
 		441541612B3928EF00FEE953 /* TeamSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441541602B3928EF00FEE953 /* TeamSwift.swift */; };
+		441541652B39AA8E00FEE953 /* MapItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 441541642B39AA8E00FEE953 /* MapItemView.m */; };
+		441541682B39B43900FEE953 /* MapItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 441541672B39B43900FEE953 /* MapItemViewCell.m */; };
 		444737762B36F6FB00619391 /* ChantsVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444737752B36F6FB00619391 /* ChantsVIewController.m */; };
 		4447377A2B3720A100619391 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 444737792B3720A100619391 /* Team.m */; };
 		4472B99B2B38136400A59ACF /* TeamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4472B99A2B38136400A59ACF /* TeamTableViewCell.m */; };
@@ -36,6 +38,10 @@
 		4415415C2B391B9000FEE953 /* TeamsViewModelSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModelSwift.swift; sourceTree = "<group>"; };
 		4415415E2B391ED500FEE953 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		441541602B3928EF00FEE953 /* TeamSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSwift.swift; sourceTree = "<group>"; };
+		441541632B39AA4B00FEE953 /* MapItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapItemView.h; sourceTree = "<group>"; };
+		441541642B39AA8E00FEE953 /* MapItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapItemView.m; sourceTree = "<group>"; };
+		441541662B39B40F00FEE953 /* MapItemViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapItemViewCell.h; sourceTree = "<group>"; };
+		441541672B39B43900FEE953 /* MapItemViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapItemViewCell.m; sourceTree = "<group>"; };
 		444737752B36F6FB00619391 /* ChantsVIewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChantsVIewController.m; sourceTree = "<group>"; };
 		444737772B36F71F00619391 /* ChantsVIewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChantsVIewController.h; sourceTree = "<group>"; };
 		444737792B3720A100619391 /* Team.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
@@ -81,6 +87,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		441541622B39AA1100FEE953 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				441541632B39AA4B00FEE953 /* MapItemView.h */,
+				441541642B39AA8E00FEE953 /* MapItemView.m */,
+				441541662B39B40F00FEE953 /* MapItemViewCell.h */,
+				441541672B39B43900FEE953 /* MapItemViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4440B9A02AD6E82E001B1278 /* CalculationApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +160,7 @@
 		84114BCD2B33E18A005DC592 /* MapController */ = {
 			isa = PBXGroup;
 			children = (
+				441541622B39AA1100FEE953 /* Views */,
 				84EBA3FA2B352ABA0023E565 /* MapControllerStackView */,
 				8454BBD52B33E8C90037E6DA /* Location */,
 				84114BCE2B33E1AD005DC592 /* MapController.h */,
@@ -304,9 +322,11 @@
 				8454BBDA2B33E91A0037E6DA /* Location.m in Sources */,
 				84882FAE2B359BB200D401AC /* LocationView.m in Sources */,
 				444737762B36F6FB00619391 /* ChantsVIewController.m in Sources */,
+				441541682B39B43900FEE953 /* MapItemViewCell.m in Sources */,
 				441541612B3928EF00FEE953 /* TeamSwift.swift in Sources */,
 				84114BD02B33E1AD005DC592 /* MapController.m in Sources */,
 				44061BF12AE014B60047B699 /* CalculationApp.mm in Sources */,
+				441541652B39AA8E00FEE953 /* MapItemView.m in Sources */,
 				4415415F2B391ED500FEE953 /* Team.swift in Sources */,
 				4472B99B2B38136400A59ACF /* TeamTableViewCell.m in Sources */,
 			);

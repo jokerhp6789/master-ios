@@ -84,8 +84,6 @@ NSString *const cellId = @"TeamTableViewCell_Id";
     [middleView addArrangedSubview:nameView];
     [middleView addArrangedSubview:infoView];
     
-   
-    
     [NSLayoutConstraint activateConstraints:@[
             [containerView.topAnchor constraintEqualToAnchor:self.contentView.topAnchor constant:8],
             [containerView.bottomAnchor constraintEqualToAnchor:self.contentView.bottomAnchor constant:-8],
@@ -100,7 +98,7 @@ NSString *const cellId = @"TeamTableViewCell_Id";
             // style middle view and content
             [middleView.topAnchor constraintEqualToAnchor:containerView.topAnchor constant:16],
             [middleView.leadingAnchor constraintEqualToAnchor:badgeView.trailingAnchor constant:8],
-//            [middleView.trailingAnchor constraintEqualToAnchor:containerView.trailingAnchor],
+//          [middleView.trailingAnchor constraintEqualToAnchor:containerView.trailingAnchor],
             
             [nameView.topAnchor constraintEqualToAnchor:middleView.topAnchor],
             [nameView.leadingAnchor constraintEqualToAnchor:middleView.leadingAnchor],
