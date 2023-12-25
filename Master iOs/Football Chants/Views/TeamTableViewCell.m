@@ -35,6 +35,7 @@ NSString *const cellId = @"TeamTableViewCell_Id";
     UIStackView *containerView = [[UIStackView alloc]init ];
     containerView.translatesAutoresizingMaskIntoConstraints = false;
     containerView.spacing = 8;
+    containerView.layer.cornerRadius = 8;
     containerView.distribution = UIStackViewDistributionFill;
     containerView.alignment = UIStackViewAlignmentCenter;
     return containerView;
@@ -48,50 +49,71 @@ NSString *const cellId = @"TeamTableViewCell_Id";
     return middleView;
 }
 
+
+- (UIButton*)getButtonView {
+    UIButton *buttonView = [[UIButton alloc]init ];
+    buttonView.translatesAutoresizingMaskIntoConstraints = false;
+    buttonView.tintColor = [UIColor whiteColor];
+    [buttonView setImage:[UIImage systemImageNamed:@"play.circle" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:44]] forState:UIControlStateNormal];
+    return buttonView;
+}
+
 - (void)configure:(Team*) team{
     self.teamData = team;
     UIColor *bgColor =  [team getTeamColor];
-    self.backgroundColor = bgColor;
-    
+
     UIStackView *containerView = [self getContainerView];
-    UIStackView *middleView = [self getMiddleView];
+    containerView.backgroundColor = bgColor;
+   
     
     UIImageView *badgeView =  [team getTeamBadge];
     badgeView.translatesAutoresizingMaskIntoConstraints = false;
     
+    UIStackView *middleView = [self getMiddleView];
     UILabel *nameView = [self getNameView];
     UILabel *infoView = [self getInfoView];
+    
+    UIButton *buttonView = [self getButtonView];
   
-
     [self.contentView addSubview:containerView];
+    
+    [containerView addArrangedSubview:badgeView];
+    [containerView addArrangedSubview:middleView];
+    [containerView addArrangedSubview:buttonView];
     
     [middleView addArrangedSubview:nameView];
     [middleView addArrangedSubview:infoView];
     
-    [containerView addArrangedSubview:badgeView];
-    [containerView addArrangedSubview:middleView];
+   
     
     [NSLayoutConstraint activateConstraints:@[
-            [containerView.topAnchor constraintEqualToAnchor:self.contentView.topAnchor],
-            [containerView.bottomAnchor constraintEqualToAnchor:self.contentView.bottomAnchor],
-            [containerView.leadingAnchor constraintEqualToAnchor:self.contentView.leadingAnchor],
-            [containerView.trailingAnchor constraintEqualToAnchor:self.contentView.trailingAnchor],
+            [containerView.topAnchor constraintEqualToAnchor:self.contentView.topAnchor constant:8],
+            [containerView.bottomAnchor constraintEqualToAnchor:self.contentView.bottomAnchor constant:-8],
+            [containerView.leadingAnchor constraintEqualToAnchor:self.contentView.leadingAnchor constant:16],
+            [containerView.trailingAnchor constraintEqualToAnchor:self.contentView.trailingAnchor constant:-16],
             
             // style badge view
-            [badgeView.heightAnchor constraintEqualToConstant:50],
             [badgeView.widthAnchor constraintEqualToConstant:50],
-            [badgeView.topAnchor constraintEqualToAnchor:containerView.topAnchor constant:16],
+            [badgeView.topAnchor constraintEqualToAnchor:middleView.topAnchor],
             [badgeView.leadingAnchor constraintEqualToAnchor:containerView.leadingAnchor constant:8],
             
             // style middle view and content
             [middleView.topAnchor constraintEqualToAnchor:containerView.topAnchor constant:16],
-//            [middleView.bottomAnchor constraintEqualToAnchor:containerView.bottomAnchor constant:-16],
             [middleView.leadingAnchor constraintEqualToAnchor:badgeView.trailingAnchor constant:8],
 //            [middleView.trailingAnchor constraintEqualToAnchor:containerView.trailingAnchor],
             
             [nameView.topAnchor constraintEqualToAnchor:middleView.topAnchor],
             [nameView.leadingAnchor constraintEqualToAnchor:middleView.leadingAnchor],
             [nameView.trailingAnchor constraintEqualToAnchor:middleView.trailingAnchor],
+            
+            [infoView.topAnchor constraintEqualToAnchor:nameView.bottomAnchor constant:4],
+            [infoView.leadingAnchor constraintEqualToAnchor:middleView.leadingAnchor],
+            [infoView.trailingAnchor constraintEqualToAnchor:middleView.trailingAnchor],
+            
+            // style button view
+          
+            [buttonView.leadingAnchor constraintEqualToAnchor:middleView.trailingAnchor constant:8],
+            [buttonView.trailingAnchor constraintEqualToAnchor:containerView.trailingAnchor constant:-8],
     ]];
 }
 

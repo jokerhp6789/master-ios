@@ -55,7 +55,6 @@
     tableView.rowHeight = UITableViewAutomaticDimension;
     tableView.estimatedRowHeight = 100;
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    tableView.backgroundColor = [UIColor grayColor];
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     [tableView registerClass:[TeamTableViewCell class] forCellReuseIdentifier:cellId];
     tableView.dataSource = self; // assign all the method required by the UITableDataSource protocol which are implemented in the UITableView protocol MARK  to the tableView obj

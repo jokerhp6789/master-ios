@@ -20,6 +20,18 @@
         case arsenal:
             [image setImage:[UIImage imageNamed:@"arsenal_ic"]];
             return image;
+        case astonVilla:
+            [image setImage:[UIImage imageNamed:@"aston_villa_ic"]];
+            return image;
+        case burnley:
+            [image setImage:[UIImage imageNamed:@"burnley_ic"]];
+            return image;
+        case brighton:
+            [image setImage:[UIImage imageNamed:@"brighton_ic"]];
+            return image;
+        case chelsea:
+            [image setImage:[UIImage imageNamed:@"chelsea_ic"]];
+            return image;
         default:
             [image setImage:[UIImage imageNamed:@"arsenal_ic"]];
             return image;
