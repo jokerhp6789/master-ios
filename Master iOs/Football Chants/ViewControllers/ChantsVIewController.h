@@ -14,8 +14,10 @@
 #import <UIKit/UIKit.h>
 
 
-@interface  ChantsVIewController: UIViewController<UITableViewDataSource>
+@interface  ChantsVIewController: UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @property (strong,nonatomic) UITableView *tableView;
+
+@property (strong,nonatomic) NSArray *teams;
 
 @end

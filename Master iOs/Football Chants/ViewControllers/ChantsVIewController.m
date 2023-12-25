@@ -9,6 +9,7 @@
 #import "ChantsVIewController.h"
 #import "Team.h"
 #import "TeamTableViewCell.h"
+#import "TeamViewModel.h"
 
 @implementation ChantsVIewController
 
@@ -16,20 +17,44 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-}
-
-- (void)loadView {
-    [super loadView];
+    [self loadData];
     [self setUpView];
 }
+
+//- (void)loadView {
+//    [super loadView];
+//    [self loadData];
+//    [self setUpView];
+//}
+
+// MARK: - LOAD DATA
+
+-(void)loadData {
+    self.teams = TEAM_DATA;
+}
+
+-(Team *) getTeamByIndex:(NSUInteger) index {
+    NSDictionary *foundData = self.teams[index];
+    Team *foundTeam = [[Team alloc] init];
+    NSDictionary *foundDataId = foundData[@"id"];
+    foundTeam.id = foundDataId;
+    foundTeam.name = foundData[@"name"];
+    foundTeam.info = foundData[@"info"];
+    foundTeam.manager.name = foundData[@"manager"][@"name"];
+    foundTeam.manager.job = foundData[@"manager"][@"job"];
+    foundTeam.founded = foundData[@"founded"];
+    return  foundTeam;
+}
+
 
 // MARK: - SETUP UI
 
 -(void)setUpView {
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero ];
+    UITableView *tableView = [[UITableView alloc] init ];
     tableView.translatesAutoresizingMaskIntoConstraints = false;
     tableView.rowHeight = UITableViewAutomaticDimension;
-    tableView.estimatedRowHeight = 44;
+    tableView.estimatedRowHeight = 100;
+    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     tableView.backgroundColor = [UIColor grayColor];
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     [tableView registerClass:[TeamTableViewCell class] forCellReuseIdentifier:cellId];
@@ -49,7 +74,7 @@
 // MARK: - UITableView protocol
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return [self.teams count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -70,8 +95,14 @@
 //            break;
 //    }
     
-    [cell configure];
+    Team *team = [self getTeamByIndex:indexPath.row];
+    
+    [cell configure:team];
     return  cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return UITableViewAutomaticDimension;
 }
 
 @end

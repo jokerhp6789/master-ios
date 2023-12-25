@@ -12,23 +12,30 @@
 @implementation Team
 
 
--(UIImageView *)getTeamBadge:(TeamType)team {
-    UIImageView *image = [[UIImageView alloc] init ];
+-(UIImageView *)getTeamBadge {
+    UIImageView *image = [[UIImageView alloc] init];
     image.translatesAutoresizingMaskIntoConstraints = false;
     image.contentMode = UIViewContentModeScaleAspectFit;
-    switch (team) {
+    switch ([self.id intValue]) {
         case arsenal:
             [image setImage:[UIImage imageNamed:@"arsenal_ic"]];
             return image;
         default:
-            return nil;;
+            [image setImage:[UIImage imageNamed:@"arsenal_ic"]];
+            return image;
     }
 }
 
-- (UIColor *)getTeamColor:(TeamType)team {
-    switch (team) {
+- (UIColor *)getTeamColor {
+    switch ([self.id intValue]) {
         case arsenal:
             return [UIColor colorNamed:@"arsenal_bg"];
+        case astonVilla:
+            return [UIColor colorNamed:@"aston_villa_bg"];
+        case burnley:
+            return [UIColor colorNamed:@"burnley_bg"];
+        case brighton:
+            return [UIColor colorNamed:@"brighton_bg"];
         case chelsea:
             return [UIColor colorNamed:@"chelsea_bg"];
         default:

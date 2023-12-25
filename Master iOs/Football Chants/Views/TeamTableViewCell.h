@@ -12,14 +12,14 @@
 #endif /* TeamTableViewCell_h */
 
 #import <UIKit/UIKit.h>
+#import "Team.h"
 
 
 extern  NSString *const cellId;
 
 @interface TeamTableViewCell : UITableViewCell
 
+@property (strong,nonatomic) Team *teamData;
 
-
--(void)configure;
-
+-(void)configure:(Team*) team;
 @end

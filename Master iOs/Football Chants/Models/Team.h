@@ -16,8 +16,8 @@
 typedef NS_ENUM(NSInteger,TeamType) {
     arsenal = 0,
     astonVilla,
-    brighton,
     burnley,
+    brighton,
     chelsea,
     everton,
     fulham,
@@ -36,20 +36,39 @@ typedef NS_ENUM(NSInteger,TeamType) {
     
 };
 
+
+typedef NS_ENUM(NSInteger,JobType) {
+    manager = 0,
+    headCoach,
+};
+
+
+@interface Manager : NSObject
+
+@property (nonatomic) JobType job;
+
+@property (strong,nonatomic) NSString *name;
+
+@end
+
+
+
 @interface Team : NSObject
 
-@property (nonatomic) TeamType id;
+@property (nonatomic) NSString *id;
 
 @property (strong,nonatomic) NSString *name;
 
 @property (strong,nonatomic) NSString *info;
 
-@property (strong,nonatomic) NSString *founder;
+@property (strong,nonatomic) NSString *founded;
+
+@property (strong,nonatomic) Manager *manager;
 
 @property (nonatomic) BOOL isPlaying;
 
-- (UIColor*) getTeamColor:(TeamType) team;
+- (UIColor*) getTeamColor;
 
-- (UIImageView*) getTeamBadge:(TeamType) team;
+- (UIImageView*) getTeamBadge;
 
 @end
