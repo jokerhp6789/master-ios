@@ -62,7 +62,7 @@
     button.translatesAutoresizingMaskIntoConstraints = false;
     button.accessibilityLabel = [location.id stringValue];
 
-    [button addTarget:self action:@selector(onPressMapItemButton:) forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:@selector(sendNotificationButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     
     [infoView addArrangedSubview:label];
     [infoView addArrangedSubview:button];
@@ -107,6 +107,7 @@
     
     return  self;
 }
+
 - (IBAction)onPressMapItemButton:(UIButton*)sender {
     if(self.delegate){
         [self.delegate onPressMapItemButton:sender];
@@ -122,4 +123,11 @@
     [mapContextManager onPressGoToMapDispatcher:sender];
 //    [[MapContextManager new] onPressGoToMapDispatcher:sender];
 }
+
+
+- (IBAction)sendNotificationButtonTapped:(UIButton*)sender {
+    NSDictionary *userInfo = @{@"button":sender};
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"onPressMapItemButton" object:nil userInfo:userInfo];
+}
+
 @end

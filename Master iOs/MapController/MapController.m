@@ -31,6 +31,8 @@
     
     [tableView registerClass:[MapItemViewCell class] forCellReuseIdentifier:MapItemView_CellId];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(onPressMapItemButtonHandler:) name:@"onPressMapItemButton" object:nil];
+    
     self.tableView = tableView;
     
 
@@ -119,6 +121,30 @@
         }
     }
     
+}
+
+
+- (void)onPressMapItemButtonHandler:(NSNotification *)payload {
+   
+    NSDictionary *userInfo = payload.userInfo;
+    UIButton *button = userInfo[@"button"];
+    NSLog(@"onPressMapItemButtonHandler In Map Controller View");
+    
+    NSArray *filter = [_points filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"id == %f",[button.accessibilityLabel floatValue]]];
+
+    if(filter.count > 0){
+        Location *found = filter.firstObject;
+        if(found != nil){
+            LocationView *locationView = [[LocationView alloc]init ];
+            locationView.activePoint = found;
+            [self.navigationController pushViewController:locationView animated:YES];
+        }
+    }
+    
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 

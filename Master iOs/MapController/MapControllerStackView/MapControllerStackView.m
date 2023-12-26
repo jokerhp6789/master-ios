@@ -19,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onPressMapItemButtonHandler:) name:@"onPressMapItemButton" object:nil ];
+    
     LocationController *model =[[LocationController alloc] init];
     self.points = [model getPointsOfInterest];
     
@@ -93,6 +95,24 @@
         }
     }
 }
+
+
+- (void)onPressMapItemButtonHandler:(NSNotification *)payload {
+    NSDictionary *userInfo = payload.userInfo;
+    UIButton *button = userInfo[@"button"];
+    NSArray *filter = [_points filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"id == %f",[button.accessibilityLabel floatValue]]];
+
+    if(filter.count > 0){
+        Location *found = filter.firstObject;
+        if(found != nil){
+            LocationView *locationView = [[LocationView alloc]init ];
+            locationView.activePoint = found;
+            [self.navigationController pushViewController:locationView animated:YES];
+        }
+    }
+    
+}
+
 
 
 
