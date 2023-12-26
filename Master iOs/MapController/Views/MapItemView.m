@@ -17,7 +17,7 @@
 - (instancetype)init{
     self = [super init];
     if(self){
-        [MapContextManager sharedInstance].delegate = self;
+       [MapContextManager sharedInstance].delegate = self;
     }
     return  self;
 }
@@ -113,8 +113,13 @@
     }
 }
 
--(void)onPressGoToMap:(UIButton*)sender {
-    [[MapContextManager sharedInstance] onPressGoToMapDispatcher:sender];
+-(void)onPressGoToMap:(UIButton *)sender{
+    NSLog(@"onPressGoToMap in Map Item View");
 }
 
+-(void)onPressButton:(UIButton*)sender {
+    MapContextManager *mapContextManager = [MapContextManager sharedInstance];
+    [mapContextManager onPressGoToMapDispatcher:sender];
+//    [[MapContextManager new] onPressGoToMapDispatcher:sender];
+}
 @end

@@ -9,16 +9,37 @@
 #import "MapContextManager.h"
 
 @implementation MapContextManager
+static MapContextManager *singletonObject = nil;
+
+- (instancetype)init{
+//    static MapContextManager *mapContextManager = nil;
+//    static dispatch_once_t onceToken;
+//
+//    dispatch_once(&onceToken, ^{
+//        mapContextManager = [super init];
+//    });
+//
+//    return  mapContextManager;
+    if(!singletonObject){
+        singletonObject = [super init];
+    }
+    return singletonObject;
+}
 
 +(instancetype)sharedInstance {
-    static MapContextManager *mapContextManager = nil;
-    static dispatch_once_t onceToken;
     
-    dispatch_once(&onceToken, ^{
-        mapContextManager = [[self alloc]init ];
-    });
+    if(!singletonObject){
+        singletonObject = [[MapContextManager alloc] init];
+    }
+    return singletonObject;
     
-    return  mapContextManager;
+//    static MapContextManager *mapContextManager = nil;
+//    static dispatch_once_t onceToken;
+//
+//    dispatch_once(&onceToken, ^{
+//        mapContextManager = [[self alloc]init ];
+//    });
+//    return mapContextManager;
 }
 
 - (void)onPressGoToMapDispatcher:(UIButton*)sender {

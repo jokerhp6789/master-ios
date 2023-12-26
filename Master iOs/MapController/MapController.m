@@ -10,15 +10,15 @@
 #import "Location.h"
 #import "MapItemViewCell.h"
 #import "LocationView.h"
-#import "MapContextManager.h"
 
 @implementation MapController
 
-
 -(void)viewDidLoad {
 	[super viewDidLoad ];
-    [MapContextManager sharedInstance].delegate = self;
-	
+    
+    MapContextManager *mapContextManager = [MapContextManager sharedInstance];
+    mapContextManager.delegate = self;
+    
 	LocationController *model =[[LocationController alloc] init];
 	self.points = [model getPointsOfInterest];
 	
@@ -107,6 +107,7 @@
 }
 
 - (void)onPressGoToMap:(UIButton *)sender {
+    NSLog(@"onPressGoToMap In Map Controller View");
     NSArray *filter = [_points filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"id == %f",[sender.accessibilityLabel floatValue]]];
     
     if(filter.count > 0){

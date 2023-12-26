@@ -14,11 +14,12 @@
 #import <UIKit/UIKit.h>
 #import "Location.h"
 #import "MapItemView.h"
+#import "MapContextManager.h"
 
 extern  NSString *const MapItemView_CellId;
 
 
-@interface MapItemViewCell : UITableViewCell<MapItemViewDelegate>
+@interface MapItemViewCell : UITableViewCell<MapItemViewDelegate,MapContextManagerDelegate>
 
 @property (strong,nonatomic) Location *location;
 

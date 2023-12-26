@@ -12,6 +12,12 @@ NSString *const MapItemView_CellId = @"MapItemView_CellId";
 
 @implementation MapItemViewCell
 
+- (instancetype)init{
+    self = [super init];
+    [MapContextManager sharedInstance].delegate = self;
+    return self;
+}
+
 -(void)configure :(Location *)location  {
     
     UIView *containerView = [[UIView alloc] init];
@@ -42,6 +48,11 @@ NSString *const MapItemView_CellId = @"MapItemView_CellId";
 
 - (void)onPressMapItemButton:(UIButton *)sender {
     NSLog(@"onPressMapItemButton");
+}
+
+- (void)onPressGoToMap:(UIButton *)sender{
+    NSLog(@"onPressGoToMap in Map Item View Cell");
+    
 }
 
 @end

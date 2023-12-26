@@ -45,7 +45,7 @@ NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ012345
 	// Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning{
+- (void)didReceiveMemoryWarning:(UIButton *)sender{
 	NSLog(@"Get Into didReceiveMemoryWarning");
 }
 
