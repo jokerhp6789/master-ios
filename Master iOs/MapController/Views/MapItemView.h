@@ -13,6 +13,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Location.h"
+#import "MapContextManager.h"
 
 typedef void (^CallbackBlock)(void);
 
@@ -23,7 +24,7 @@ typedef void (^CallbackBlock)(void);
 @end
 
 
-@interface MapItemView : UIView
+@interface MapItemView : UIView<MapContextManagerDelegate>
 
 @property (strong,nonatomic) Location *location;
 

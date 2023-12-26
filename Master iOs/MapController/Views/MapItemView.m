@@ -14,7 +14,16 @@
 
 @implementation MapItemView
 
+- (instancetype)init{
+    self = [super init];
+    if(self){
+        [MapContextManager sharedInstance].delegate = self;
+    }
+    return  self;
+}
+
 - (UIView*)configure:(Location *) location{
+   
     self.backgroundColor = [UIColor whiteColor];
     self.layer.borderWidth = 0.5;
     self.layer.borderColor = [UIColor grayColor].CGColor;
@@ -102,6 +111,10 @@
     if(self.delegate){
         [self.delegate onPressMapItemButton:sender];
     }
+}
+
+-(void)onPressGoToMap:(UIButton*)sender {
+    [[MapContextManager sharedInstance] onPressGoToMapDispatcher:sender];
 }
 
 @end

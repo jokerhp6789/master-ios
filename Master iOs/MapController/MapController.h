@@ -6,10 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MapItemView.h"
+#import "MapContextManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MapController:UITableViewController<UITableViewDelegate,UITableViewDataSource>
+@interface MapController:UITableViewController<UITableViewDelegate,UITableViewDataSource,MapItemViewDelegate,MapContextManagerDelegate>
 
 @property (strong,nonatomic) NSArray *points;
 

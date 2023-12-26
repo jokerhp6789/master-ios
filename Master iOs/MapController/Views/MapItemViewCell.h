@@ -18,7 +18,7 @@
 extern  NSString *const MapItemView_CellId;
 
 
-@interface MapItemViewCell : UITableViewCell
+@interface MapItemViewCell : UITableViewCell<MapItemViewDelegate>
 
 @property (strong,nonatomic) Location *location;
 

@@ -15,6 +15,7 @@
 		441541682B39B43900FEE953 /* MapItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 441541672B39B43900FEE953 /* MapItemViewCell.m */; };
 		444737762B36F6FB00619391 /* ChantsVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444737752B36F6FB00619391 /* ChantsVIewController.m */; };
 		4447377A2B3720A100619391 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 444737792B3720A100619391 /* Team.m */; };
+		444F7BE92B3A825C004FD50F /* MapContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 444F7BE82B3A825C004FD50F /* MapContextManager.m */; };
 		4472B99B2B38136400A59ACF /* TeamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4472B99A2B38136400A59ACF /* TeamTableViewCell.m */; };
 		4472B9A02B3826D300A59ACF /* TeamViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4472B99F2B3826D300A59ACF /* TeamViewModel.m */; };
 		84114BD02B33E1AD005DC592 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84114BCF2B33E1AD005DC592 /* MapController.m */; };
@@ -46,6 +47,8 @@
 		444737772B36F71F00619391 /* ChantsVIewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChantsVIewController.h; sourceTree = "<group>"; };
 		444737792B3720A100619391 /* Team.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
 		4447377B2B3720C500619391 /* Team.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
+		444F7BE82B3A825C004FD50F /* MapContextManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapContextManager.m; sourceTree = "<group>"; };
+		444F7BEA2B3A8265004FD50F /* MapContextManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapContextManager.h; sourceTree = "<group>"; };
 		4472B99A2B38136400A59ACF /* TeamTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamTableViewCell.m; sourceTree = "<group>"; };
 		4472B99C2B38137900A59ACF /* TeamTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamTableViewCell.h; sourceTree = "<group>"; };
 		4472B99E2B3826C200A59ACF /* TeamViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamViewModel.h; sourceTree = "<group>"; };
@@ -137,6 +140,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		444F7BE72B3A81C9004FD50F /* MapContextManager */ = {
+			isa = PBXGroup;
+			children = (
+				444F7BE82B3A825C004FD50F /* MapContextManager.m */,
+				444F7BEA2B3A8265004FD50F /* MapContextManager.h */,
+			);
+			path = MapContextManager;
+			sourceTree = "<group>";
+		};
 		4472B9992B38133400A59ACF /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +172,7 @@
 		84114BCD2B33E18A005DC592 /* MapController */ = {
 			isa = PBXGroup;
 			children = (
+				444F7BE72B3A81C9004FD50F /* MapContextManager */,
 				441541622B39AA1100FEE953 /* Views */,
 				84EBA3FA2B352ABA0023E565 /* MapControllerStackView */,
 				8454BBD52B33E8C90037E6DA /* Location */,
@@ -310,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				444F7BE92B3A825C004FD50F /* MapContextManager.m in Sources */,
 				84EBA3FD2B352BFD0023E565 /* MapControllerStackView.m in Sources */,
 				8458D7122AD40B4800CF4935 /* ViewController.m in Sources */,
 				8458D70C2AD40B4800CF4935 /* AppDelegate.m in Sources */,

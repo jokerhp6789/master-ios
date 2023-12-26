@@ -12,14 +12,13 @@ NSString *const MapItemView_CellId = @"MapItemView_CellId";
 
 @implementation MapItemViewCell
 
-
-
 -(void)configure :(Location *)location  {
     
     UIView *containerView = [[UIView alloc] init];
     containerView.translatesAutoresizingMaskIntoConstraints = false;
     
     MapItemView *mapContentView = [[MapItemView alloc]init ];
+    mapContentView.delegate = self;
     [mapContentView configure:location];
     mapContentView.translatesAutoresizingMaskIntoConstraints = false;
     
@@ -39,9 +38,10 @@ NSString *const MapItemView_CellId = @"MapItemView_CellId";
             [mapContentView.trailingAnchor constraintEqualToAnchor:containerView.trailingAnchor],
             
     ]];
-    
-    
-    
+}
+
+- (void)onPressMapItemButton:(UIButton *)sender {
+    NSLog(@"onPressMapItemButton");
 }
 
 @end

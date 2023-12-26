@@ -92,9 +92,6 @@
             [self.navigationController pushViewController:locationView animated:YES];
         }
     }
-    
-    
-    
 }
 
 

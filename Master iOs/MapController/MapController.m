@@ -9,12 +9,15 @@
 #import "LocationController.h"
 #import "Location.h"
 #import "MapItemViewCell.h"
+#import "LocationView.h"
+#import "MapContextManager.h"
 
 @implementation MapController
 
 
 -(void)viewDidLoad {
 	[super viewDidLoad ];
+    [MapContextManager sharedInstance].delegate = self;
 	
 	LocationController *model =[[LocationController alloc] init];
 	self.points = [model getPointsOfInterest];
@@ -88,5 +91,35 @@
 	[view addSubview:label];
 	return  view;
 }
+
+- (void)onPressMapItemButton:(UIButton *)sender {
+    NSArray *filter = [_points filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"id == %f",[sender.accessibilityLabel floatValue]]];
+    
+    if(filter.count > 0){
+        Location *found = filter.firstObject;
+        if(found != nil){
+            LocationView *locationView = [[LocationView alloc]init ];
+            locationView.activePoint = found;
+            [self.navigationController pushViewController:locationView animated:YES];
+        }
+    }
+        
+}
+
+- (void)onPressGoToMap:(UIButton *)sender {
+    NSArray *filter = [_points filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"id == %f",[sender.accessibilityLabel floatValue]]];
+    
+    if(filter.count > 0){
+        Location *found = filter.firstObject;
+        if(found != nil){
+            LocationView *locationView = [[LocationView alloc]init ];
+            locationView.activePoint = found;
+            [self.navigationController pushViewController:locationView animated:YES];
+        }
+    }
+    
+}
+
+
 
 @end
