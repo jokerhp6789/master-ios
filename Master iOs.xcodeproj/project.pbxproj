@@ -31,6 +31,9 @@
 		8458D71D2AD40B4A00CF4935 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8458D71C2AD40B4A00CF4935 /* main.m */; };
 		84882FAE2B359BB200D401AC /* LocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84882FAD2B359BB200D401AC /* LocationView.m */; };
 		84EBA3FD2B352BFD0023E565 /* MapControllerStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EBA3FC2B352BFD0023E565 /* MapControllerStackView.m */; };
+		84F15C282B4FCEF0007B561B /* FootballChantsSwiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F15C272B4FCEF0007B561B /* FootballChantsSwiftController.swift */; };
+		84F15C2C2B4FE23B007B561B /* FootballChantsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F15C2B2B4FE23B007B561B /* FootballChantsModel.swift */; };
+		84F15C2E2B4FE64A007B561B /* TeamViewCellSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F15C2D2B4FE64A007B561B /* TeamViewCellSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +80,9 @@
 		84882FAF2B359BCD00D401AC /* LocationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationView.h; sourceTree = "<group>"; };
 		84EBA3FB2B352BCF0023E565 /* MapControllerStackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapControllerStackView.h; sourceTree = "<group>"; };
 		84EBA3FC2B352BFD0023E565 /* MapControllerStackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapControllerStackView.m; sourceTree = "<group>"; };
+		84F15C272B4FCEF0007B561B /* FootballChantsSwiftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballChantsSwiftController.swift; sourceTree = "<group>"; };
+		84F15C2B2B4FE23B007B561B /* FootballChantsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballChantsModel.swift; sourceTree = "<group>"; };
+		84F15C2D2B4FE64A007B561B /* TeamViewCellSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewCellSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +221,7 @@
 		8458D7092AD40B4800CF4935 /* Master iOs */ = {
 			isa = PBXGroup;
 			children = (
+				84F15C262B4FC924007B561B /* Football Chants Swift */,
 				444737712B36E85300619391 /* Football Chants */,
 				84114BCD2B33E18A005DC592 /* MapController */,
 				8458D7232AD55C9800CF4935 /* AutoLayoutPractice */,
@@ -249,6 +256,32 @@
 				84EBA3FC2B352BFD0023E565 /* MapControllerStackView.m */,
 			);
 			path = MapControllerStackView;
+			sourceTree = "<group>";
+		};
+		84F15C262B4FC924007B561B /* Football Chants Swift */ = {
+			isa = PBXGroup;
+			children = (
+				84F15C2A2B4FE22A007B561B /* Model */,
+				84F15C292B4FDF0D007B561B /* Views */,
+				84F15C272B4FCEF0007B561B /* FootballChantsSwiftController.swift */,
+			);
+			path = "Football Chants Swift";
+			sourceTree = "<group>";
+		};
+		84F15C292B4FDF0D007B561B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84F15C2D2B4FE64A007B561B /* TeamViewCellSwift.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84F15C2A2B4FE22A007B561B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84F15C2B2B4FE23B007B561B /* FootballChantsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,15 +364,18 @@
 				4472B9A02B3826D300A59ACF /* TeamViewModel.m in Sources */,
 				8458D71D2AD40B4A00CF4935 /* main.m in Sources */,
 				4447377A2B3720A100619391 /* Team.m in Sources */,
+				84F15C2C2B4FE23B007B561B /* FootballChantsModel.swift in Sources */,
 				8458D70F2AD40B4800CF4935 /* SceneDelegate.mm in Sources */,
 				8454BBDE2B33EC940037E6DA /* LocationController.m in Sources */,
 				8454BBDA2B33E91A0037E6DA /* Location.m in Sources */,
+				84F15C2E2B4FE64A007B561B /* TeamViewCellSwift.swift in Sources */,
 				84882FAE2B359BB200D401AC /* LocationView.m in Sources */,
 				444737762B36F6FB00619391 /* ChantsVIewController.m in Sources */,
 				441541682B39B43900FEE953 /* MapItemViewCell.m in Sources */,
 				441541612B3928EF00FEE953 /* TeamSwift.swift in Sources */,
 				84114BD02B33E1AD005DC592 /* MapController.m in Sources */,
 				44061BF12AE014B60047B699 /* CalculationApp.mm in Sources */,
+				84F15C282B4FCEF0007B561B /* FootballChantsSwiftController.swift in Sources */,
 				441541652B39AA8E00FEE953 /* MapItemView.m in Sources */,
 				4415415F2B391ED500FEE953 /* Team.swift in Sources */,
 				4472B99B2B38136400A59ACF /* TeamTableViewCell.m in Sources */,
