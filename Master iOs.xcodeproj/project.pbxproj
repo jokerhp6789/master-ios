@@ -16,8 +16,9 @@
 		444737762B36F6FB00619391 /* ChantsVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444737752B36F6FB00619391 /* ChantsVIewController.m */; };
 		4447377A2B3720A100619391 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 444737792B3720A100619391 /* Team.m */; };
 		444F7BE92B3A825C004FD50F /* MapContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 444F7BE82B3A825C004FD50F /* MapContextManager.m */; };
+		445408CF2B3FC06400529C3D /* AppConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 445408CE2B3FC06400529C3D /* AppConstant.m */; };
 		4472B99B2B38136400A59ACF /* TeamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4472B99A2B38136400A59ACF /* TeamTableViewCell.m */; };
-		4472B9A02B3826D300A59ACF /* TeamViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4472B99F2B3826D300A59ACF /* TeamViewModel.m */; };
+		44A1D3B42B3FF03900D6CB1B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1D3B32B3FF03900D6CB1B /* CollectionViewController.swift */; };
 		84114BD02B33E1AD005DC592 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84114BCF2B33E1AD005DC592 /* MapController.m */; };
 		8454BBDA2B33E91A0037E6DA /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454BBD92B33E91A0037E6DA /* Location.m */; };
 		8454BBDE2B33EC940037E6DA /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454BBDD2B33EC940037E6DA /* LocationController.m */; };
@@ -31,9 +32,12 @@
 		8458D71D2AD40B4A00CF4935 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8458D71C2AD40B4A00CF4935 /* main.m */; };
 		84882FAE2B359BB200D401AC /* LocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84882FAD2B359BB200D401AC /* LocationView.m */; };
 		84EBA3FD2B352BFD0023E565 /* MapControllerStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EBA3FC2B352BFD0023E565 /* MapControllerStackView.m */; };
+		F15BFAF391D8EF8E49709E9F /* Pods_Master_iOs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 827BFFC9AE0EA10F50CF4EBC /* Pods_Master_iOs.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044203B9FDADBCA25DE10EB3 /* Pods-Master iOs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Master iOs.debug.xcconfig"; path = "Target Support Files/Pods-Master iOs/Pods-Master iOs.debug.xcconfig"; sourceTree = "<group>"; };
+		2630B3881D9D1BA7906BCE0A /* Pods-Master iOs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Master iOs.release.xcconfig"; path = "Target Support Files/Pods-Master iOs/Pods-Master iOs.release.xcconfig"; sourceTree = "<group>"; };
 		44061BF02AE014B60047B699 /* CalculationApp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CalculationApp.mm; sourceTree = "<group>"; };
 		4415415B2B391B9000FEE953 /* Master_iOs-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Master_iOs-Bridging-Header.h"; sourceTree = "<group>"; };
 		4415415C2B391B9000FEE953 /* TeamsViewModelSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModelSwift.swift; sourceTree = "<group>"; };
@@ -49,10 +53,12 @@
 		4447377B2B3720C500619391 /* Team.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
 		444F7BE82B3A825C004FD50F /* MapContextManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapContextManager.m; sourceTree = "<group>"; };
 		444F7BEA2B3A8265004FD50F /* MapContextManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapContextManager.h; sourceTree = "<group>"; };
+		445408CE2B3FC06400529C3D /* AppConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppConstant.m; sourceTree = "<group>"; };
+		445408D02B3FC07400529C3D /* AppConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
 		4472B99A2B38136400A59ACF /* TeamTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamTableViewCell.m; sourceTree = "<group>"; };
 		4472B99C2B38137900A59ACF /* TeamTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamTableViewCell.h; sourceTree = "<group>"; };
-		4472B99E2B3826C200A59ACF /* TeamViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamViewModel.h; sourceTree = "<group>"; };
-		4472B99F2B3826D300A59ACF /* TeamViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamViewModel.m; sourceTree = "<group>"; };
+		44A1D3B32B3FF03900D6CB1B /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		827BFFC9AE0EA10F50CF4EBC /* Pods_Master_iOs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Master_iOs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84114BCE2B33E1AD005DC592 /* MapController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
 		84114BCF2B33E1AD005DC592 /* MapController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
 		8454BBD92B33E91A0037E6DA /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
@@ -84,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F15BFAF391D8EF8E49709E9F /* Pods_Master_iOs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +156,15 @@
 			path = MapContextManager;
 			sourceTree = "<group>";
 		};
+		445408CD2B3FC03800529C3D /* AppConstant */ = {
+			isa = PBXGroup;
+			children = (
+				445408CE2B3FC06400529C3D /* AppConstant.m */,
+				445408D02B3FC07400529C3D /* AppConstant.h */,
+			);
+			path = AppConstant;
+			sourceTree = "<group>";
+		};
 		4472B9992B38133400A59ACF /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,12 +177,18 @@
 		4472B99D2B3820E000A59ACF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				4472B99E2B3826C200A59ACF /* TeamViewModel.h */,
-				4472B99F2B3826D300A59ACF /* TeamViewModel.m */,
 				4415415C2B391B9000FEE953 /* TeamsViewModelSwift.swift */,
 				4415415E2B391ED500FEE953 /* Team.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		44A1D3B22B3FF00B00D6CB1B /* InfinityScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				44A1D3B32B3FF03900D6CB1B /* CollectionViewController.swift */,
+			);
+			path = InfinityScrollView;
 			sourceTree = "<group>";
 		};
 		84114BCD2B33E18A005DC592 /* MapController */ = {
@@ -201,6 +223,8 @@
 			children = (
 				8458D7092AD40B4800CF4935 /* Master iOs */,
 				8458D7082AD40B4800CF4935 /* Products */,
+				C122E678A287DF5F13405F6B /* Pods */,
+				CFC8A67D297BF69F4299F584 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,6 +239,8 @@
 		8458D7092AD40B4800CF4935 /* Master iOs */ = {
 			isa = PBXGroup;
 			children = (
+				44A1D3B22B3FF00B00D6CB1B /* InfinityScrollView */,
+				445408CD2B3FC03800529C3D /* AppConstant */,
 				444737712B36E85300619391 /* Football Chants */,
 				84114BCD2B33E18A005DC592 /* MapController */,
 				8458D7232AD55C9800CF4935 /* AutoLayoutPractice */,
@@ -251,6 +277,23 @@
 			path = MapControllerStackView;
 			sourceTree = "<group>";
 		};
+		C122E678A287DF5F13405F6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				044203B9FDADBCA25DE10EB3 /* Pods-Master iOs.debug.xcconfig */,
+				2630B3881D9D1BA7906BCE0A /* Pods-Master iOs.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CFC8A67D297BF69F4299F584 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				827BFFC9AE0EA10F50CF4EBC /* Pods_Master_iOs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -258,9 +301,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8458D7202AD40B4A00CF4935 /* Build configuration list for PBXNativeTarget "Master iOs" */;
 			buildPhases = (
+				6795E4E81DD04CE98AFFB275 /* [CP] Check Pods Manifest.lock */,
 				8458D7032AD40B4800CF4935 /* Sources */,
 				8458D7042AD40B4800CF4935 /* Frameworks */,
 				8458D7052AD40B4800CF4935 /* Resources */,
+				3C75120D7A1FCE494E4311B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -318,6 +363,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3C75120D7A1FCE494E4311B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Master iOs/Pods-Master iOs-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Master iOs/Pods-Master iOs-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Master iOs/Pods-Master iOs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6795E4E81DD04CE98AFFB275 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Master iOs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8458D7032AD40B4800CF4935 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -328,7 +415,6 @@
 				8458D7122AD40B4800CF4935 /* ViewController.m in Sources */,
 				8458D70C2AD40B4800CF4935 /* AppDelegate.m in Sources */,
 				4415415D2B391B9000FEE953 /* TeamsViewModelSwift.swift in Sources */,
-				4472B9A02B3826D300A59ACF /* TeamViewModel.m in Sources */,
 				8458D71D2AD40B4A00CF4935 /* main.m in Sources */,
 				4447377A2B3720A100619391 /* Team.m in Sources */,
 				8458D70F2AD40B4800CF4935 /* SceneDelegate.mm in Sources */,
@@ -337,10 +423,12 @@
 				84882FAE2B359BB200D401AC /* LocationView.m in Sources */,
 				444737762B36F6FB00619391 /* ChantsVIewController.m in Sources */,
 				441541682B39B43900FEE953 /* MapItemViewCell.m in Sources */,
+				445408CF2B3FC06400529C3D /* AppConstant.m in Sources */,
 				441541612B3928EF00FEE953 /* TeamSwift.swift in Sources */,
 				84114BD02B33E1AD005DC592 /* MapController.m in Sources */,
 				44061BF12AE014B60047B699 /* CalculationApp.mm in Sources */,
 				441541652B39AA8E00FEE953 /* MapItemView.m in Sources */,
+				44A1D3B42B3FF03900D6CB1B /* CollectionViewController.swift in Sources */,
 				4415415F2B391ED500FEE953 /* Team.swift in Sources */,
 				4472B99B2B38136400A59ACF /* TeamTableViewCell.m in Sources */,
 			);
@@ -481,6 +569,7 @@
 		};
 		8458D7212AD40B4A00CF4935 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 044203B9FDADBCA25DE10EB3 /* Pods-Master iOs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -495,6 +584,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -512,6 +602,7 @@
 		};
 		8458D7222AD40B4A00CF4935 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2630B3881D9D1BA7906BCE0A /* Pods-Master iOs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -526,6 +617,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

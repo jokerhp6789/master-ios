@@ -9,7 +9,7 @@
 #import "ChantsVIewController.h"
 #import "Team.h"
 #import "TeamTableViewCell.h"
-#import "TeamViewModel.h"
+#import "AppConstant.h"
 
 @implementation ChantsVIewController
 
@@ -30,7 +30,7 @@
 // MARK: - LOAD DATA
 
 -(void)loadData {
-    self.teams = TEAM_DATA;
+    self.teams = [[AppConstant alloc] init].TEAM_DATA;
 }
 
 -(Team *) getTeamByIndex:(NSUInteger) index {
