@@ -15,7 +15,7 @@ class CollectionViewController:UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView?.addInfiniteScroll(handler: <#T##(UICollectionView) -> Void#>)
+//        collectionView?.addInfiniteScroll(handler: <#T##(UICollectionView) -> Void#>)
     }
     
 }
