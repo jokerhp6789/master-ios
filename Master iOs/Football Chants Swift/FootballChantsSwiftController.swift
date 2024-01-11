@@ -13,7 +13,7 @@ class FootballChantsSwiftController:UIViewController {
 	
 	// MARK - DATA
 	
-	private lazy var teamData = TeamsViewModelSwift.init().teams
+    private  var teamData = TeamsViewModelSwift()
 	
 	// MARK - UI
 	private lazy var tableView:UITableView = {
@@ -31,11 +31,11 @@ class FootballChantsSwiftController:UIViewController {
 	
 	override func  loadView() {
 		super.loadView()
-		setUp()
 	}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        setUp()
 	}
 	
 }
@@ -43,8 +43,10 @@ class FootballChantsSwiftController:UIViewController {
 
 // MARK - SET UP UI
 private extension FootballChantsSwiftController {
-	
 	func setUp(){
+        
+//        self.navigationController?.navigationBar.topItem?.title = "Football Chants"
+//        self.navigationController?.navigationBar.prefersLargeTitles = true
 		
 		tableView.dataSource = self
 		
@@ -62,17 +64,20 @@ private extension FootballChantsSwiftController {
 // MARK - IMPLEMENT UITableViewDataSource
 extension FootballChantsSwiftController:UITableViewDataSource {
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return teamData.count
+        return teamData.teams.count
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell  = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TeamViewCellSwift
-		let foundTeam = teamData[indexPath.row]
+        let foundTeam = teamData.teams[indexPath.row]
 		print("Found team item is \(foundTeam)")
 		cell.configure(team: foundTeam)
 		return cell
 	}
-	
-	
-	
+}
+
+extension FootballChantsSwiftController:UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
 }

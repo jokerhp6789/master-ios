@@ -20,6 +20,7 @@
 		445408CF2B3FC06400529C3D /* AppConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 445408CE2B3FC06400529C3D /* AppConstant.m */; };
 		4472B99B2B38136400A59ACF /* TeamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4472B99A2B38136400A59ACF /* TeamTableViewCell.m */; };
 		44A1D3B42B3FF03900D6CB1B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1D3B32B3FF03900D6CB1B /* CollectionViewController.swift */; };
+		44F5CAF52B5032C300DDD165 /* Assest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5CAF42B5032C300DDD165 /* Assest.swift */; };
 		84114BD02B33E1AD005DC592 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84114BCF2B33E1AD005DC592 /* MapController.m */; };
 		8454BBDA2B33E91A0037E6DA /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454BBD92B33E91A0037E6DA /* Location.m */; };
 		8454BBDE2B33EC940037E6DA /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454BBDD2B33EC940037E6DA /* LocationController.m */; };
@@ -60,6 +61,7 @@
 		4472B99A2B38136400A59ACF /* TeamTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamTableViewCell.m; sourceTree = "<group>"; };
 		4472B99C2B38137900A59ACF /* TeamTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamTableViewCell.h; sourceTree = "<group>"; };
 		44A1D3B32B3FF03900D6CB1B /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		44F5CAF42B5032C300DDD165 /* Assest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assest.swift; sourceTree = "<group>"; };
 		4A535CA19E5735523CBC678F /* Pods-Master iOs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Master iOs.release.xcconfig"; path = "Target Support Files/Pods-Master iOs/Pods-Master iOs.release.xcconfig"; sourceTree = "<group>"; };
 		84114BCE2B33E1AD005DC592 /* MapController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
 		84114BCF2B33E1AD005DC592 /* MapController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 				84F15C2A2B4FE22A007B561B /* Model */,
 				84F15C292B4FDF0D007B561B /* Views */,
 				84F15C272B4FCEF0007B561B /* FootballChantsSwiftController.swift */,
+				44F5CAF42B5032C300DDD165 /* Assest.swift */,
 			);
 			path = "Football Chants Swift";
 			sourceTree = "<group>";
@@ -324,7 +327,6 @@
 				BBEC6D493FE6A4792B27A0BC /* Pods-Master iOs.debug.xcconfig */,
 				4A535CA19E5735523CBC678F /* Pods-Master iOs.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -462,6 +464,7 @@
 				445408CF2B3FC06400529C3D /* AppConstant.m in Sources */,
 				441541612B3928EF00FEE953 /* TeamSwift.swift in Sources */,
 				84114BD02B33E1AD005DC592 /* MapController.m in Sources */,
+				44F5CAF52B5032C300DDD165 /* Assest.swift in Sources */,
 				44061BF12AE014B60047B699 /* CalculationApp.mm in Sources */,
 				84F15C282B4FCEF0007B561B /* FootballChantsSwiftController.swift in Sources */,
 				441541652B39AA8E00FEE953 /* MapItemView.m in Sources */,
