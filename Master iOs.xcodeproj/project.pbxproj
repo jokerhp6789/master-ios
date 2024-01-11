@@ -32,7 +32,9 @@
 		8458D71D2AD40B4A00CF4935 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8458D71C2AD40B4A00CF4935 /* main.m */; };
 		84882FAE2B359BB200D401AC /* LocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84882FAD2B359BB200D401AC /* LocationView.m */; };
 		84EBA3FD2B352BFD0023E565 /* MapControllerStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EBA3FC2B352BFD0023E565 /* MapControllerStackView.m */; };
-		F15BFAF391D8EF8E49709E9F /* Pods_Master_iOs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 827BFFC9AE0EA10F50CF4EBC /* Pods_Master_iOs.framework */; };
+		84F15C282B4FCEF0007B561B /* FootballChantsSwiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F15C272B4FCEF0007B561B /* FootballChantsSwiftController.swift */; };
+		84F15C2C2B4FE23B007B561B /* FootballChantsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F15C2B2B4FE23B007B561B /* FootballChantsModel.swift */; };
+		84F15C2E2B4FE64A007B561B /* TeamViewCellSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F15C2D2B4FE64A007B561B /* TeamViewCellSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +85,9 @@
 		84882FAF2B359BCD00D401AC /* LocationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationView.h; sourceTree = "<group>"; };
 		84EBA3FB2B352BCF0023E565 /* MapControllerStackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapControllerStackView.h; sourceTree = "<group>"; };
 		84EBA3FC2B352BFD0023E565 /* MapControllerStackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapControllerStackView.m; sourceTree = "<group>"; };
+		84F15C272B4FCEF0007B561B /* FootballChantsSwiftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballChantsSwiftController.swift; sourceTree = "<group>"; };
+		84F15C2B2B4FE23B007B561B /* FootballChantsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballChantsModel.swift; sourceTree = "<group>"; };
+		84F15C2D2B4FE64A007B561B /* TeamViewCellSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewCellSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,8 +244,12 @@
 		8458D7092AD40B4800CF4935 /* Master iOs */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				44A1D3B22B3FF00B00D6CB1B /* InfinityScrollView */,
 				445408CD2B3FC03800529C3D /* AppConstant */,
+=======
+				84F15C262B4FC924007B561B /* Football Chants Swift */,
+>>>>>>> fd16ff7345829825c06f0c416f22e387770b3ad8
 				444737712B36E85300619391 /* Football Chants */,
 				84114BCD2B33E18A005DC592 /* MapController */,
 				8458D7232AD55C9800CF4935 /* AutoLayoutPractice */,
@@ -277,21 +286,30 @@
 			path = MapControllerStackView;
 			sourceTree = "<group>";
 		};
-		C122E678A287DF5F13405F6B /* Pods */ = {
+		84F15C262B4FC924007B561B /* Football Chants Swift */ = {
 			isa = PBXGroup;
 			children = (
-				044203B9FDADBCA25DE10EB3 /* Pods-Master iOs.debug.xcconfig */,
-				2630B3881D9D1BA7906BCE0A /* Pods-Master iOs.release.xcconfig */,
+				84F15C2A2B4FE22A007B561B /* Model */,
+				84F15C292B4FDF0D007B561B /* Views */,
+				84F15C272B4FCEF0007B561B /* FootballChantsSwiftController.swift */,
 			);
-			path = Pods;
+			path = "Football Chants Swift";
 			sourceTree = "<group>";
 		};
-		CFC8A67D297BF69F4299F584 /* Frameworks */ = {
+		84F15C292B4FDF0D007B561B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				827BFFC9AE0EA10F50CF4EBC /* Pods_Master_iOs.framework */,
+				84F15C2D2B4FE64A007B561B /* TeamViewCellSwift.swift */,
 			);
-			name = Frameworks;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84F15C2A2B4FE22A007B561B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84F15C2B2B4FE23B007B561B /* FootballChantsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,9 +435,11 @@
 				4415415D2B391B9000FEE953 /* TeamsViewModelSwift.swift in Sources */,
 				8458D71D2AD40B4A00CF4935 /* main.m in Sources */,
 				4447377A2B3720A100619391 /* Team.m in Sources */,
+				84F15C2C2B4FE23B007B561B /* FootballChantsModel.swift in Sources */,
 				8458D70F2AD40B4800CF4935 /* SceneDelegate.mm in Sources */,
 				8454BBDE2B33EC940037E6DA /* LocationController.m in Sources */,
 				8454BBDA2B33E91A0037E6DA /* Location.m in Sources */,
+				84F15C2E2B4FE64A007B561B /* TeamViewCellSwift.swift in Sources */,
 				84882FAE2B359BB200D401AC /* LocationView.m in Sources */,
 				444737762B36F6FB00619391 /* ChantsVIewController.m in Sources */,
 				441541682B39B43900FEE953 /* MapItemViewCell.m in Sources */,
@@ -427,6 +447,7 @@
 				441541612B3928EF00FEE953 /* TeamSwift.swift in Sources */,
 				84114BD02B33E1AD005DC592 /* MapController.m in Sources */,
 				44061BF12AE014B60047B699 /* CalculationApp.mm in Sources */,
+				84F15C282B4FCEF0007B561B /* FootballChantsSwiftController.swift in Sources */,
 				441541652B39AA8E00FEE953 /* MapItemView.m in Sources */,
 				44A1D3B42B3FF03900D6CB1B /* CollectionViewController.swift in Sources */,
 				4415415F2B391ED500FEE953 /* Team.swift in Sources */,
