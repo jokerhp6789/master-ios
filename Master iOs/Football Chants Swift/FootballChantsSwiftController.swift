@@ -14,6 +14,7 @@ class FootballChantsSwiftController:UIViewController {
 	// MARK: - DATA
 	
 	private  var teamData = TeamsViewModelSwift()
+	private  var teamAudioController = TeamAudioController()
 	
 	// MARK: - UI
 	private lazy var tableView:UITableView = {
@@ -83,6 +84,7 @@ extension FootballChantsSwiftController:UITableViewDelegate {
 }
 extension FootballChantsSwiftController:TeamViewCellSwiftDelegate {
 	func onPressPlayButton(for team: TeamSwift) {
+		teamAudioController.playTeamChant(team)
 		teamData.toggleIsPlaying(for: team )
 		tableView.reloadData()
 	}

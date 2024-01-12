@@ -37,6 +37,26 @@
 		84F15C282B4FCEF0007B561B /* FootballChantsSwiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F15C272B4FCEF0007B561B /* FootballChantsSwiftController.swift */; };
 		84F15C2C2B4FE23B007B561B /* FootballChantsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F15C2B2B4FE23B007B561B /* FootballChantsModel.swift */; };
 		84F15C2E2B4FE64A007B561B /* TeamViewCellSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F15C2D2B4FE64A007B561B /* TeamViewCellSwift.swift */; };
+		84F15C892B511382007B561B /* TeamAudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F15C882B511382007B561B /* TeamAudioController.swift */; };
+		84F15C9D2B511956007B561B /* leicester.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C8A2B511954007B561B /* leicester.mp3 */; };
+		84F15C9E2B511956007B561B /* arsenal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C8B2B511954007B561B /* arsenal.mp3 */; };
+		84F15C9F2B511956007B561B /* fulham.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C8C2B511954007B561B /* fulham.mp3 */; };
+		84F15CA02B511956007B561B /* everton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C8D2B511954007B561B /* everton.mp3 */; };
+		84F15CA12B511956007B561B /* manchester_united.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C8E2B511955007B561B /* manchester_united.mp3 */; };
+		84F15CA22B511956007B561B /* burnley.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C8F2B511955007B561B /* burnley.mp3 */; };
+		84F15CA32B511956007B561B /* leeds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C902B511955007B561B /* leeds.mp3 */; };
+		84F15CA42B511956007B561B /* wolves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C912B511955007B561B /* wolves.mp3 */; };
+		84F15CA52B511956007B561B /* liverpool.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C922B511955007B561B /* liverpool.mp3 */; };
+		84F15CA62B511956007B561B /* brighton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C932B511955007B561B /* brighton.mp3 */; };
+		84F15CA72B511956007B561B /* sheffield.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C942B511955007B561B /* sheffield.mp3 */; };
+		84F15CA82B511956007B561B /* newcastle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C952B511955007B561B /* newcastle.mp3 */; };
+		84F15CA92B511956007B561B /* tottenham.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C962B511955007B561B /* tottenham.mp3 */; };
+		84F15CAA2B511956007B561B /* palace.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C972B511955007B561B /* palace.mp3 */; };
+		84F15CAB2B511956007B561B /* manchester_city.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C982B511955007B561B /* manchester_city.mp3 */; };
+		84F15CAC2B511956007B561B /* west_brom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C992B511955007B561B /* west_brom.mp3 */; };
+		84F15CAD2B511956007B561B /* chelsea.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C9A2B511955007B561B /* chelsea.mp3 */; };
+		84F15CAE2B511956007B561B /* southampton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C9B2B511955007B561B /* southampton.mp3 */; };
+		84F15CAF2B511956007B561B /* aston_villa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F15C9C2B511956007B561B /* aston_villa.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +110,27 @@
 		84F15C272B4FCEF0007B561B /* FootballChantsSwiftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballChantsSwiftController.swift; sourceTree = "<group>"; };
 		84F15C2B2B4FE23B007B561B /* FootballChantsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballChantsModel.swift; sourceTree = "<group>"; };
 		84F15C2D2B4FE64A007B561B /* TeamViewCellSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewCellSwift.swift; sourceTree = "<group>"; };
+		84F15C882B511382007B561B /* TeamAudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamAudioController.swift; sourceTree = "<group>"; };
+		84F15C8A2B511954007B561B /* leicester.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = leicester.mp3; sourceTree = "<group>"; };
+		84F15C8B2B511954007B561B /* arsenal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = arsenal.mp3; sourceTree = "<group>"; };
+		84F15C8C2B511954007B561B /* fulham.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fulham.mp3; sourceTree = "<group>"; };
+		84F15C8D2B511954007B561B /* everton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = everton.mp3; sourceTree = "<group>"; };
+		84F15C8E2B511955007B561B /* manchester_united.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = manchester_united.mp3; sourceTree = "<group>"; };
+		84F15C8F2B511955007B561B /* burnley.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = burnley.mp3; sourceTree = "<group>"; };
+		84F15C902B511955007B561B /* leeds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = leeds.mp3; sourceTree = "<group>"; };
+		84F15C912B511955007B561B /* wolves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wolves.mp3; sourceTree = "<group>"; };
+		84F15C922B511955007B561B /* liverpool.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = liverpool.mp3; sourceTree = "<group>"; };
+		84F15C932B511955007B561B /* brighton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = brighton.mp3; sourceTree = "<group>"; };
+		84F15C942B511955007B561B /* sheffield.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sheffield.mp3; sourceTree = "<group>"; };
+		84F15C952B511955007B561B /* newcastle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = newcastle.mp3; sourceTree = "<group>"; };
+		84F15C962B511955007B561B /* tottenham.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tottenham.mp3; sourceTree = "<group>"; };
+		84F15C972B511955007B561B /* palace.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = palace.mp3; sourceTree = "<group>"; };
+		84F15C982B511955007B561B /* manchester_city.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = manchester_city.mp3; sourceTree = "<group>"; };
+		84F15C992B511955007B561B /* west_brom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = west_brom.mp3; sourceTree = "<group>"; };
+		84F15C9A2B511955007B561B /* chelsea.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chelsea.mp3; sourceTree = "<group>"; };
+		84F15C9B2B511955007B561B /* southampton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = southampton.mp3; sourceTree = "<group>"; };
+		84F15C9C2B511956007B561B /* aston_villa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = aston_villa.mp3; sourceTree = "<group>"; };
+		84F15CB02B511A9F007B561B /* Master iOs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Master iOs.entitlements"; sourceTree = "<group>"; };
 		BBEC6D493FE6A4792B27A0BC /* Pods-Master iOs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Master iOs.debug.xcconfig"; path = "Target Support Files/Pods-Master iOs/Pods-Master iOs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,6 +288,27 @@
 		8458D7092AD40B4800CF4935 /* Master iOs */ = {
 			isa = PBXGroup;
 			children = (
+				84F15CB12B511B62007B561B /* New Group */,
+				84F15CB02B511A9F007B561B /* Master iOs.entitlements */,
+				84F15C8B2B511954007B561B /* arsenal.mp3 */,
+				84F15C9C2B511956007B561B /* aston_villa.mp3 */,
+				84F15C932B511955007B561B /* brighton.mp3 */,
+				84F15C8F2B511955007B561B /* burnley.mp3 */,
+				84F15C9A2B511955007B561B /* chelsea.mp3 */,
+				84F15C8D2B511954007B561B /* everton.mp3 */,
+				84F15C8C2B511954007B561B /* fulham.mp3 */,
+				84F15C902B511955007B561B /* leeds.mp3 */,
+				84F15C8A2B511954007B561B /* leicester.mp3 */,
+				84F15C922B511955007B561B /* liverpool.mp3 */,
+				84F15C982B511955007B561B /* manchester_city.mp3 */,
+				84F15C8E2B511955007B561B /* manchester_united.mp3 */,
+				84F15C952B511955007B561B /* newcastle.mp3 */,
+				84F15C972B511955007B561B /* palace.mp3 */,
+				84F15C942B511955007B561B /* sheffield.mp3 */,
+				84F15C9B2B511955007B561B /* southampton.mp3 */,
+				84F15C962B511955007B561B /* tottenham.mp3 */,
+				84F15C992B511955007B561B /* west_brom.mp3 */,
+				84F15C912B511955007B561B /* wolves.mp3 */,
 				44A1D3B22B3FF00B00D6CB1B /* InfinityScrollView */,
 				445408CD2B3FC03800529C3D /* AppConstant */,
 				84F15C262B4FC924007B561B /* Football Chants Swift */,
@@ -289,6 +351,7 @@
 		84F15C262B4FC924007B561B /* Football Chants Swift */ = {
 			isa = PBXGroup;
 			children = (
+				84F15C872B51135F007B561B /* Controller */,
 				84F15C2A2B4FE22A007B561B /* Model */,
 				84F15C292B4FDF0D007B561B /* Views */,
 				84F15C272B4FCEF0007B561B /* FootballChantsSwiftController.swift */,
@@ -311,6 +374,21 @@
 				84F15C2B2B4FE23B007B561B /* FootballChantsModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		84F15C872B51135F007B561B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84F15C882B511382007B561B /* TeamAudioController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84F15CB12B511B62007B561B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		F3B6EC601917CB321D5448AC /* Frameworks */ = {
@@ -391,9 +469,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				8458D71A2AD40B4A00CF4935 /* LaunchScreen.storyboard in Resources */,
+				84F15CA82B511956007B561B /* newcastle.mp3 in Resources */,
+				84F15CA12B511956007B561B /* manchester_united.mp3 in Resources */,
+				84F15CA52B511956007B561B /* liverpool.mp3 in Resources */,
+				84F15CA22B511956007B561B /* burnley.mp3 in Resources */,
+				84F15CAE2B511956007B561B /* southampton.mp3 in Resources */,
+				84F15CAC2B511956007B561B /* west_brom.mp3 in Resources */,
+				84F15C9E2B511956007B561B /* arsenal.mp3 in Resources */,
+				84F15CAA2B511956007B561B /* palace.mp3 in Resources */,
+				84F15CA92B511956007B561B /* tottenham.mp3 in Resources */,
+				84F15CA42B511956007B561B /* wolves.mp3 in Resources */,
+				84F15CA32B511956007B561B /* leeds.mp3 in Resources */,
+				84F15C9F2B511956007B561B /* fulham.mp3 in Resources */,
 				8458D7172AD40B4A00CF4935 /* Assets.xcassets in Resources */,
+				84F15CA72B511956007B561B /* sheffield.mp3 in Resources */,
+				84F15CA02B511956007B561B /* everton.mp3 in Resources */,
+				84F15C9D2B511956007B561B /* leicester.mp3 in Resources */,
+				84F15CA62B511956007B561B /* brighton.mp3 in Resources */,
 				8454BBE12B33F66B0037E6DA /* Location.json in Resources */,
 				8458D7152AD40B4800CF4935 /* Main.storyboard in Resources */,
+				84F15CAD2B511956007B561B /* chelsea.mp3 in Resources */,
+				84F15CAB2B511956007B561B /* manchester_city.mp3 in Resources */,
+				84F15CAF2B511956007B561B /* aston_villa.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +556,7 @@
 				8454BBDA2B33E91A0037E6DA /* Location.m in Sources */,
 				84F15C2E2B4FE64A007B561B /* TeamViewCellSwift.swift in Sources */,
 				84882FAE2B359BB200D401AC /* LocationView.m in Sources */,
+				84F15C892B511382007B561B /* TeamAudioController.swift in Sources */,
 				444737762B36F6FB00619391 /* ChantsVIewController.m in Sources */,
 				441541682B39B43900FEE953 /* MapItemViewCell.m in Sources */,
 				445408CF2B3FC06400529C3D /* AppConstant.m in Sources */,
@@ -614,6 +712,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Master iOs/Master iOs.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -647,6 +746,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Master iOs/Master iOs.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
