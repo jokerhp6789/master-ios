@@ -26,9 +26,8 @@ class TeamAudioController {
 			audioPlayer?.stop()
 			return
 		} else {
-			 let path = Bundle.main.path(forResource: "\(team.id.chantFile).mp3", ofType: nil)
-			print("get team path \(path)")
-			let url = URL(fileURLWithPath: path!)
+			guard let path = Bundle.main.path(forResource: "\(team.id.chantFile).mp3", ofType: nil) else {return}
+			let url = URL(fileURLWithPath: path)
 			playAudio(with: url)
 		}
 		
