@@ -169,10 +169,7 @@ extension TeamViewCellSwift {
 
 extension TeamViewCellSwift {
 	@objc func onPressPlayButtonHandler(){
-		print("On Press Play Button \(teamData?.name)")
-		if(teamData != nil){
 			self.delegate?.onPressPlayButton(for: teamData!)
-		}
 	}
 	
 }

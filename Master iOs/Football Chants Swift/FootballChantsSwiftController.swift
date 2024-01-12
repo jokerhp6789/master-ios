@@ -83,7 +83,6 @@ extension FootballChantsSwiftController:UITableViewDelegate {
 }
 extension FootballChantsSwiftController:TeamViewCellSwiftDelegate {
 	func onPressPlayButton(for team: TeamSwift) {
-		print("onPressPlayButton in FootballChantsSwiftController \(team.name)")
 		teamData.toggleIsPlaying(for: team )
 		tableView.reloadData()
 	}
