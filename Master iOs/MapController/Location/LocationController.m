@@ -26,7 +26,7 @@
 			parsedPoint.address = address;
 			parsedPoint.photo = [point objectForKey:@"photo"];
 			parsedPoint.latitude = [[point objectForKey:@"latitude"] floatValue];
-            parsedPoint.longtitude = [[point objectForKey:@"longtitude"] floatValue];
+			parsedPoint.longtitude = [[point objectForKey:@"longtitude"] floatValue];
 			parsedPoint.id = [point objectForKey:@"id"];
 			
 			[locations addObject:parsedPoint];

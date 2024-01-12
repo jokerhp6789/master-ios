@@ -18,13 +18,22 @@ struct ManagerSwift {
 }
 
 
-struct TeamSwift {
+class TeamSwift {
+	internal init(id: TeamType, name: String, info: String, manager: ManagerSwift, founded: String, isPlaying: Bool = false) {
+		self.id = id
+		self.name = name
+		self.info = info
+		self.manager = manager
+		self.founded = founded
+		self.isPlaying = isPlaying
+	}
+	
 	let id:TeamType
 	let name:String
 	let info:String
 	let manager: ManagerSwift
 	let founded:String
-	var isPlaying:Bool = false
+	var isPlaying:Bool
 }
 
 
@@ -126,5 +135,17 @@ struct TeamSwift {
 		     manager: .init(name: "Nuno Espírito Santo", job: .headCoach),
 		     founded: "1877"),
 	]
+	
+	func toggleIsPlaying(for team:TeamSwift){
+		
+		teams.forEach{
+			item in
+			if(item.id == team.id){
+				item.isPlaying.toggle()
+			} else {
+				item.isPlaying = false
+			}
+		}
+	}
 }
 

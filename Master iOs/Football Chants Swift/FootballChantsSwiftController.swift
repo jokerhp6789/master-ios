@@ -11,11 +11,11 @@ import UIKit
 
 class FootballChantsSwiftController:UIViewController {
 	
-	// MARK - DATA
+	// MARK: - DATA
 	
-    private  var teamData = TeamsViewModelSwift()
+	private  var teamData = TeamsViewModelSwift()
 	
-	// MARK - UI
+	// MARK: - UI
 	private lazy var tableView:UITableView = {
 		let tv = UITableView()
 		tv.translatesAutoresizingMaskIntoConstraints = false
@@ -23,7 +23,7 @@ class FootballChantsSwiftController:UIViewController {
 		tv.rowHeight = UITableView.automaticDimension
 		tv.estimatedRowHeight = 44
 		tv.separatorStyle = .none
-		tv.register(TeamViewCellSwift.self, forCellReuseIdentifier: "Cell")
+		tv.register(TeamViewCellSwift.self, forCellReuseIdentifier: TeamViewCellSwift.cellId)
 		return tv
 	}()
 	
@@ -31,22 +31,23 @@ class FootballChantsSwiftController:UIViewController {
 	
 	override func  loadView() {
 		super.loadView()
+		setUp()
 	}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-        setUp()
+		
 	}
 	
 }
 
 
-// MARK - SET UP UI
+// MARK: - SET UP UI
 private extension FootballChantsSwiftController {
 	func setUp(){
-        
-//        self.navigationController?.navigationBar.topItem?.title = "Football Chants"
-//        self.navigationController?.navigationBar.prefersLargeTitles = true
+		
+		//        self.navigationController?.navigationBar.topItem?.title = "Football Chants"
+		//        self.navigationController?.navigationBar.prefersLargeTitles = true
 		
 		tableView.dataSource = self
 		
@@ -61,23 +62,29 @@ private extension FootballChantsSwiftController {
 	
 }
 
-// MARK - IMPLEMENT UITableViewDataSource
+// MARK: - IMPLEMENT UITableViewDataSource
 extension FootballChantsSwiftController:UITableViewDataSource {
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return teamData.teams.count
+		return teamData.teams.count
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell  = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TeamViewCellSwift
-        let foundTeam = teamData.teams[indexPath.row]
-		print("Found team item is \(foundTeam)")
-		cell.configure(team: foundTeam)
+		let cell  = tableView.dequeueReusableCell(withIdentifier: TeamViewCellSwift.cellId, for: indexPath) as! TeamViewCellSwift
+		let foundTeam = teamData.teams[indexPath.row]
+		cell.configure(team: foundTeam,delegate: self)
 		return cell
 	}
 }
-
+	
 extension FootballChantsSwiftController:UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
+}
+extension FootballChantsSwiftController:TeamViewCellSwiftDelegate {
+	func onPressPlayButton(for team: TeamSwift) {
+		print("onPressPlayButton in FootballChantsSwiftController \(team.name)")
+		teamData.toggleIsPlaying(for: team )
+		tableView.reloadData()
+	}
 }
